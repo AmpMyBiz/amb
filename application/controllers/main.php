@@ -4,7 +4,9 @@ class Main extends CI_Controller {
 
 	function index() {
 
-		$this->output->set_output('Let us begin...');
+		$data['view'] = 'home-view';
+
+		$this->load->view('includes/main-template', $data);
 
 	}
 
