@@ -24,12 +24,9 @@
 <!-- =============== -->
 <!-- ===== NAV ===== -->
 <!-- =============== -->
-
 <!-- SMALL profile/logo nav -->
-<div class="off-canvas-wrap top-nav">
+<div class="off-canvas-wrap">
 	<div class="inner-wrap">
-		<a class="left-off-canvas-toggle hide-for-large left top-nav-list-button"><i class="fi-list large-icon"></i></a>
-		<img class="top-nav-logo" src="http://www.fillmurray.com/115/30" alt="Our Logo">
 
 		<!-- Mobile Offcavas menu -->
 		<aside class="left-off-canvas-menu">
@@ -44,6 +41,21 @@
 
 		</aside>
 
+		<aside class="right-off-canvas-menu">
+
+			<ul>
+				<li>Poo</li>
+				<li>Poo</li>
+				<li>Poo</li>
+				<li>Poo</li>
+				<li>Poo</li>
+			</ul>
+
+		</aside>
+
+		<nav class="top-nav hide-for-medium-down">
+
+			<img class="top-nav-logo" src="http://www.fillmurray.com/145/45" alt="Our Logo">
 			<div class="top-nav-container right">
 
 				<ul class="top-nav-page-links left hide-for-medium-down">
@@ -56,12 +68,44 @@
 
 				<div class="top-nav-profile-container right">
 
-					<div class="profile-nav-user-name right">Company B</div>
-					<a href="#" class="top-nav-profile-avatar"><img src="http://www.fillmurray.com/35/35" width="50" height="50" class="circular" alt=""></a>
+					<div class="right"><a href="#"><div class="profile-nav-user-name">Company B<span class="white-text arrow-icon">3</span></div></a></div>
+					<a href="#" class="top-nav-profile-avatar left hide-for-small"><img src="http://www.fillmurray.com/40/40" class="circular profile-avatar" alt=""></a>
 
 				</div>
 
 			</div>
+		</nav>
+
+		<nav class="top-nav hide-for-large hide-for-small show-for-medium">
+
+			<a class="left-off-canvas-toggle left top-nav-list-button"><i class="fi-list large-icon white-text"></i></a>
+
+			<img class="top-nav-logo" src="http://www.fillmurray.com/225/45" alt="Our Logo">
+
+			<div class="top-nav-profile-container right">
+
+				<div class="right"><a href="#"><div class="profile-nav-user-name">Company B<span class="white-text arrow-icon">3</span></div></a></div>
+				<a href="#" class="top-nav-profile-avatar left"><img src="http://www.fillmurray.com/40/40" class="circular profile-avatar" alt=""></a>
+
+			</div>
+
+		</nav>
+
+		<nav class="top-nav hide-for-medium-up">
+
+			<a class="left-off-canvas-toggle hide-for-medium-up left top-nav-list-button"><i class="fi-list large-icon white-text"></i></a>
+
+			<div class="top-nav-container right">
+
+				<div class="top-nav-profile-container right">
+
+					<a href="#" class="right-off-canvas-toggle top-nav-profile-avatar left"><img src="http://www.fillmurray.com/40/40" class="circular profile-avatar" alt=""></a>
+
+				</div>
+
+			</div>
+
+			<img class="small-top-nav-logo" src="http://www.fillmurray.com/145/45" alt="Our Logo">
+
+		</nav>
 		<a class="exit-off-canvas"></a>
-	</div>
-</div>

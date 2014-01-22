@@ -1,14 +1,15 @@
 .top-nav {
 	background-color: #FFF;
-	height: 3em;
-	border-bottom: 2px solid $lightGray;
-	overflow: visible;
+	height: 4em;
+	border-bottom: 1px solid $lightGray;
+	width: 100%;
 }
 
 .top-nav-list-button {
 	padding: 3px 10px;
 	height: 100%;
-	border-right: 2px $darkGray solid;
+	border-right: 12px $lightBlue solid;
+	background: $blue;
 }
 
  .top-nav-page-links {
@@ -18,9 +19,9 @@
 
  .top-nav-page-links li {
  	margin-left: 1em;
- 	padding: 8px 8px 0 8px;
- 	font-size: 1em;
- 	height: 3em;
+ 	padding: 13px 8px 0 8px;
+ 	font-size: 1.1em;
+ 	height: 55px;
  }
 
  .top-nav-page-links li:first-child {
@@ -31,20 +32,28 @@
  	padding: 5px 20px;
  }
 
+ .small-top-nav-logo {
+	margin: 0 auto;
+ 	display: block;
+ 	width: 145px;
+ 	padding-top: 5px;
+ }
+
 /* PROFILE */
  .top-nav-profile-container {
- 	padding: 0 20px 0 20px;
  	font-size: 1.2em;
+ 	background: $blue;
+ 	border-left: 12px solid $lightBlue;
+ 	height: 55px;
  }
 
  .profile-nav-user-name {
- 	color: $fontBlack;
- 	padding: 10px 15px 0 0;
- 	//background: $blue;
+ 	color: $lighterBlue;
+ 	padding: 18px 15px 0 0;
  }
 
  .top-nav-profile-avatar {
- 	padding: 2px 15px 0 0;
+ 	padding: 4px 10px 0;
  	float: right;
  }
 
@@ -58,7 +67,6 @@
 }
 
 .nav-pages:hover {
-	//border-left: none;
 	color: $fontBlack;
 }
 
@@ -92,7 +100,13 @@
  	background: $lightRed;
  }
 
- // @-webkit-keyframes coursesBackgroundHover {
- // 	0% {  }
- // 	100% {}
- // }
+.profile-avatar {
+	-webkit-transition: border-color 0.2s ease;
+	border: 3px solid;
+	border-color: $lightBlue;
+}
+
+ .profile-avatar:hover {
+ 	border: 3px solid;
+ 	border-color: $lighterBlue;	
+ }

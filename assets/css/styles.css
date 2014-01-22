@@ -73,6 +73,13 @@ FONTS
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'arrowIcons';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
   font-size: 14px;
   font-family: bebasregular;
@@ -80,24 +87,44 @@ body {
 
 /* ICONS */
 .large-icon {
-  font-size: 2.5em; }
+  font-size: 2.5em;
+  padding: 5px; }
+
+.small-icon {
+  font-size: 1em;
+  padding: 5px; }
+
+.arrow-icon {
+  font-family: arrowIcons;
+  padding: 5px; }
 
 /* IMAGES */
 .circular {
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px; }
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px; }
+
+/* TEXT COLORS */
+.lighter-blue {
+  color: #c5eaf8; }
+
+.light-gray-text {
+  color: #d2d2d2; }
+
+.white-text {
+  color: #FFF; }
 
 .top-nav {
   background-color: #FFF;
-  height: 3em;
-  border-bottom: 2px solid #d2d2d2;
-  overflow: visible; }
+  height: 4em;
+  border-bottom: 1px solid #d2d2d2;
+  width: 100%; }
 
 .top-nav-list-button {
   padding: 3px 10px;
   height: 100%;
-  border-right: 2px #323232 solid; }
+  border-right: 12px #8ad5f0 solid;
+  background: #33b5e5; }
 
 .top-nav-page-links {
   list-style: none;
@@ -105,9 +132,9 @@ body {
 
 .top-nav-page-links li {
   margin-left: 1em;
-  padding: 8px 8px 0 8px;
-  font-size: 1em;
-  height: 3em; }
+  padding: 13px 8px 0 8px;
+  font-size: 1.1em;
+  height: 55px; }
 
 .top-nav-page-links li:first-child {
   margin-left: 0; }
@@ -115,17 +142,25 @@ body {
 .top-nav-logo {
   padding: 5px 20px; }
 
+.small-top-nav-logo {
+  margin: 0 auto;
+  display: block;
+  width: 145px;
+  padding-top: 5px; }
+
 /* PROFILE */
 .top-nav-profile-container {
-  padding: 0 20px 0 20px;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  background: #33b5e5;
+  border-left: 12px solid #8ad5f0;
+  height: 55px; }
 
 .profile-nav-user-name {
-  color: #262626;
-  padding: 10px 15px 0 0; }
+  color: #c5eaf8;
+  padding: 18px 15px 0 0; }
 
 .top-nav-profile-avatar {
-  padding: 2px 15px 0 0;
+  padding: 4px 10px 0;
   float: right; }
 
 .nav-pages {
@@ -163,3 +198,12 @@ body {
   border-color: #ff4444;
   color: #262626;
   background: #ff9494; }
+
+.profile-avatar {
+  -webkit-transition: border-color 0.2s ease;
+  border: 3px solid;
+  border-color: #8ad5f0; }
+
+.profile-avatar:hover {
+  border: 3px solid;
+  border-color: #c5eaf8; }
