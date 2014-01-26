@@ -82,8 +82,16 @@ FONTS
 
 body {
   font-size: 14px;
-  font-family: bebasregular;
+  font-family: cabin;
   color: #222222; }
+
+h1 {
+  font-size: 5em;
+  font-family: bebasRegular; }
+
+h2 {
+  font-size: 2em;
+  padding: 5px 0; }
 
 /* ICONS */
 .large-icon {
@@ -117,7 +125,7 @@ body {
 .top-nav {
   background-color: #FFF;
   height: 4em;
-  border-bottom: 1px solid #d2d2d2;
+  border-bottom: 2px solid #b4b4b4;
   width: 100%; }
 
 .top-nav-list-button {
@@ -134,7 +142,8 @@ body {
   margin-left: 1em;
   padding: 13px 8px 0 8px;
   font-size: 1.1em;
-  height: 55px; }
+  height: 54px;
+  font-family: bebasRegular; }
 
 .top-nav-page-links li:first-child {
   margin-left: 0; }
@@ -153,7 +162,7 @@ body {
   font-size: 1.2em;
   background: #33b5e5;
   border-left: 12px solid #8ad5f0;
-  height: 55px; }
+  height: 54px; }
 
 .profile-nav-user-name {
   color: #c5eaf8;
@@ -165,7 +174,7 @@ body {
 
 .nav-pages {
   border-left: 8px solid;
-  color: #6b6b6b;
+  color: #757575;
   -webkit-transition: background-color 0.2s ease;
   -webkit-transition: border-color 0.3s linear;
   background: #FFF;
@@ -207,3 +216,19 @@ body {
 .profile-avatar:hover {
   border: 3px solid;
   border-color: #c5eaf8; }
+
+.home-above-fold-container {
+  position: relative; }
+
+.svg-container {
+  width: 4000px;
+  position: absolute;
+  left: 50%;
+  margin-left: -2000px;
+  top: 0; }
+
+.home-above-fold-header-image {
+  margin-bottom: 20px; }
+
+.home-above-fold-intro {
+  margin-top: 16px; }

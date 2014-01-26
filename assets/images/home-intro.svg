@@ -1,0 +1,219 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="4000px" height="800px" viewBox="0 0 4000 800" enable-background="new 0 0 4000 800" xml:space="preserve">
+
+	 <style type="text/css">
+
+	 	#cursor {
+	 		-webkit-animation: moveCursorInToOne 2s ease-out 0.5s, 
+	 			moveBackCursorFromOne 1s ease-out 2.5s,
+	 			moveCursorInToTwo 1.5s ease-out 4s,
+	 			moveBackCursorFromTwo 1s ease-out 5.5s;
+	 	}
+
+	 	/* **************************** */
+	 	/* ******** KNOWLEDGE ********* */
+	 	/* **************************** */
+
+	 	#knowledge-fill {
+	 		-webkit-animation: fillBrain 2s ease-out 0.5s;
+	 	}
+
+	 	#nob { 
+	 		-webkit-animation: moveNob 2s ease-out 0.5s;
+	 	}
+
+	 	#knowledge {
+	 		-webkit-animation: rollOpen 0.25s linear 0s, 
+	 			rollOut 0.25s linear 3.5s;
+	 		-webkit-transform-origin: center center;
+	 		-webkit-animation-fill-mode: forwards;
+	 	}
+
+	 	@-webkit-keyframes fillBrain {
+	 		0% { -webkit-transform: translateY(0px); }
+	 		50% { -webkit-transform: translateY(0px); }
+	 		100% { -webkit-transform: translateY(-140px); }
+	 	}
+
+	 	@-webkit-keyframes moveNob {
+	 		0% { -webkit-transform: translateY(0px); }
+	 		50% { -webkit-transform: translateY(0px); }
+	 		100% { -webkit-transform: translateY(-220px); }
+	 	}
+
+	 	/* **************************** */
+	 	/* ******** BUSINESS ********** */
+	 	/* **************************** */
+
+	 	#business {
+	 		-webkit-animation: rollOpen 0.25s linear 3.75s,
+	 			rollOut 0.25s linear 6.5s;
+	 		-webkit-transform: rotateX(90deg);
+	 		-webkit-transform-origin: center center;
+	 		-webkit-animation-fill-mode: forwards;
+	 	}
+
+	 	#building {
+	 		-webkit-animation: scaleUpBusiness 0.75s ease-out 4.75s;
+	 		-webkit-transform-origin: center center;
+	 		-webkit-animation-fill-mode: forwards;
+	 	}
+
+	 	#selector {
+	 		-webkit-animation: showSelector 0.01s linear 4.5s,
+	 			hideSelector 0.01s linear 5.6s;
+	 		-webkit-animation-fill-mode: forwards;
+	 		opacity: 0;
+	 	}
+
+	 	@-webkit-keyframes scaleUpBusiness {
+	 		0% { -webkit-transform: scale( 1 ); }
+	 		100% { -webkit-transform: scale( 1.2 ) translateY(-30px); }
+	 	}
+
+	 	@-webkit-keyframes showSelector {
+	 		0% { opacity: 0; }
+	 		100% { opacity: 1; }
+	 	}
+
+	 	@-webkit-keyframes hideSelector {
+	 		0% { opacity: 1; }
+	 		100% { opacity: 0; }
+	 	}
+
+	 	/* **************************** */
+	 	/* ***** CURSOR ANIMATIONS **** */
+	 	/* **************************** */
+
+	 	@-webkit-keyframes moveCursorInToOne {
+	 		0% {  }
+	 		50% { -webkit-transform: translateX(-150px) translateY(260px); }
+	 		100% { -webkit-transform: translateX(-150px) translateY(40px); }
+	 	}
+
+	 	@-webkit-keyframes moveBackCursorFromOne {
+	 		0% { -webkit-transform: translateX(-150px) translateY(40px); }
+	 		100% { -webkit-transform: translateX(0px) translateY(0px); }
+	 	}
+
+	 	@-webkit-keyframes moveCursorInToTwo {
+	 		0% { -webkit-transform: translateX(0px) translateY(0px); }
+	 		50% { -webkit-transform: translateX(-160px) translateY(-6px); }
+	 		100% { -webkit-transform: translateX(-130px) translateY(-70px); }
+	 	}
+
+	 	@-webkit-keyframes moveBackCursorFromTwo {
+	 		0% { -webkit-transform: translateX(-130px) translateY(-70px); }
+	 		100% { -webkit-transform: translateX(0px) translateY(0px); }
+	 	}
+
+	 	/* **************************** */
+	 	/* ******** SLIDERS *********** */
+	 	/* **************************** */
+
+	 	@-webkit-keyframes rollOpen {
+	 		0% { -webkit-transform: rotateX(90deg); }
+	 		100% { -webkit-transform: rotateX(0deg); }
+	 	}
+
+	 	@-webkit-keyframes rollOut {
+	 		0% { -webkit-transform: rotateX(0deg); }
+	 		100% { -webkit-transform: rotateX(90deg); }
+	 	}
+
+	 </style>
+
+	<g id="business">
+		<g id="building">
+			<path fill="#757576" d="M1870.632,368.062c8.398,0,15.209-6.771,15.287-15.152h1.787c0.078,8.381,6.889,15.152,15.288,15.152
+				c8.398,0,15.21-6.771,15.286-15.152h1.789c0.076,8.381,6.888,15.152,15.287,15.152c8.398,0,15.209-6.771,15.287-15.152h2.674
+				c0.078,8.381,6.889,15.152,15.288,15.152c8.398,0,15.21-6.771,15.286-15.152h1.789c0.076,8.381,6.888,15.152,15.287,15.152
+				c8.398,0,15.209-6.771,15.287-15.152h1.787c0.078,8.381,6.889,15.152,15.288,15.152c8.398,0,15.21-6.771,15.286-15.152h2.232
+				c0.076,8.381,6.888,15.152,15.287,15.152c8.398,0,15.209-6.771,15.287-15.152h1.787c0.078,8.381,6.889,15.152,15.288,15.152
+				c8.398,0,15.21-6.771,15.286-15.152l-29.25-50.539h-66.056v-16.846h22.362c5.523,0,10-4.477,10-10v-29.463c0-5.523-4.477-10-10-10
+				h-110.779c-5.523,0-10,4.477-10,10v29.463c0,5.523,4.477,10,10,10h22.362v16.846h-65.611l-24.993,37.909
+				c-5.75,10.558-6.475,12.63-6.475,12.63C1855.421,361.291,1862.232,368.062,1870.632,368.062z M1967.94,285.525h34.136v16.846
+				h-34.136V285.525z"/>
+			<path fill="#FDBA33" d="M1885.482,466.4h198.608v-92.654h-198.608V466.4z M1968.384,389.263h98.86v61.179h-98.86V389.263z
+				 M1901.442,389.263h50.538v61.179h-50.538V389.263z"/>
+			<polygon fill="#757576" points="2111.576,478.37 2105.813,478.37 2105.813,471.721 1865.533,471.721 1865.533,478.37 
+				1859.77,478.37 1859.77,489.01 1853.493,489.01 1853.493,500.062 2117.493,500.062 2117.493,489.01 2111.576,489.01 		"/>
+			<text transform="matrix(1 0 0 1 1951.25 272.3672)" fill="#FFFFFF" font-family="'Franchise-Bold'" font-size="38.1165">STORE</text>
+			<g id="selector">
+				
+					<rect x="1838.761" y="211.213" fill="none" stroke="#757576" stroke-width="4" stroke-miterlimit="10" width="296.984" height="311.902"/>
+				
+					<rect x="1827.54" y="199.992" fill="#FFFFFF" stroke="#757576" stroke-width="2" stroke-miterlimit="10" width="22.441" height="22.441"/>
+				
+					<rect x="2124.524" y="199.992" fill="#FFFFFF" stroke="#757576" stroke-width="2" stroke-miterlimit="10" width="22.441" height="22.441"/>
+				
+					<rect x="2124.524" y="511.895" fill="#FFFFFF" stroke="#757576" stroke-width="2" stroke-miterlimit="10" width="22.441" height="22.441"/>
+				
+					<rect x="1827.54" y="511.895" fill="#FFFFFF" stroke="#757576" stroke-width="2" stroke-miterlimit="10" width="22.441" height="22.441"/>
+			</g>
+		</g>
+		<text transform="matrix(1 0 0 1 1798.2607 600.0078)" fill="#F6881F" font-family="'Franchise-Bold'" font-size="63.6486">Grow Your Business</text>
+	</g>
+
+	<g id="knowledge">
+		
+		<rect id="knowledge-fill" x="1810.349" y="384.113" fill="#35B5E4" width="185.99" height="147.884" />
+		<path id="head-bg" fill="#FFFFFF" d="M1740.603,205.305v328.931h325.483V205.305H1740.603z M1923.128,353.962
+			c-42.089,43.319-62.494,42.382-77.279,31.662s-24.94-49.862-24.94-56.983c0-7.121-5.465-45.667,48.273-72.715
+			c0,0,49.23-16.99,73.414-2.65c0,0,43.737,18.852,43.737,59.49C1986.333,341.496,1950.983,325.29,1923.128,353.962z" />
+		<path id="head" fill="#FFFFFF" stroke="#757576" stroke-width="6" stroke-miterlimit="10" d="M2016.59,362.798
+			c-3.215-3.709-15.084-11.869-16.321-22.996c-1.236-11.127,0.248-29.178,0.248-29.178s-6.406-56.626-61.312-72.944
+			c0,0-22.513-7.42-55.151,0c-32.64,7.42-70.719,29.673-76.901,70.72c-6.182,41.047,26.21,81.35,27.447,84.071
+			c1.236,2.721,10.138,35.11-9.644,105.583h114.978c0,0-5.191-28.932,12.117-43.273c0,0,5.688-3.955,21.76-3.213
+			c16.073,0.74,23.243-4.451,24.973-9.396s-3.955-10.137-4.203-12.609c-0.246-2.473,4.945-8.902,8.903-11.623
+			c3.955-2.719-2.721-8.654-3.958-8.9c0,0,5.688-3.463,6.43-4.451c0.742-0.99-1.771-12.274-0.99-14.342
+			c2.875-7.607,14.775-9.307,16.814-13.027C2024.842,371.638,2019.803,366.507,2016.59,362.798z M1923.128,349.736
+			c-42.089,42.088-62.494,41.178-77.279,30.762s-24.94-48.445-24.94-55.364c0-6.918-5.465-44.368,48.273-70.648
+			c0,0,49.23-16.507,73.414-2.575c0,0,43.737,18.316,43.737,57.798C1986.333,337.624,1950.983,321.879,1923.128,349.736z" />
+		<g id="slider">
+			<rect id="groove" x="2121.162" y="234.383" fill="#323232" width="9.848" height="266.501"/>
+			<g id="slider">
+			<path id="nob" fill="#D2D2D2" stroke="#757576" stroke-width="4" stroke-miterlimit="10" d="M2160.584,475.555
+				c0,2.762-2.238,5-5,5h-58.996c-2.762,0-5-2.238-5-5v-12.5c0-2.76,2.238-5,5-5h58.996c2.762,0,5,2.24,5,5V475.555z"/>
+			</g>
+		</g>
+		<text transform="matrix(1 0 0 1 1778.1006 595.6953)" fill="#0099CC" font-family="'Franchise-Bold'" font-size="63.6486">Grow Your Knowledge</text>
+	</g>
+	<g id="cursor">
+
+		<polygon id="bg" fill="#FFFFFF" points="2295.09,215.489 2296.235,255.195 2304.027,247.494 2305.578,246.297 2306.638,247.448 
+				2309.257,252.538 2311.891,257.579 2314.523,262.624 2319.613,262.624 2319.613,257.534 2317.025,252.448 2314.434,247.403 
+				2314.569,239.725 2320.931,239.633 2319.7,237.54 2298.814,216.65 	"/>
+		<g id="cursor-boxes">
+			<polygon fill="#323232" points="2325.283,239.725 2325.283,242.404 2314.569,242.404 2314.569,247.358 2314.434,247.403 
+				2311.936,247.403 2311.936,239.725 2311.949,239.725 2314.569,239.725 2319.723,239.725 2319.723,237.562 2322.315,237.562 
+				2322.315,239.725 		"/>
+			<polygon fill="#323232" points="2322.248,257.534 2322.248,262.624 2319.613,262.624 2319.613,262.62 2319.613,257.534 
+				2319.659,257.534 		"/>
+			<rect x="2317.112" y="234.952" fill="#323232" width="2.588" height="2.588"/>
+			<polygon fill="#323232" points="2319.659,252.448 2319.659,257.534 2319.613,257.534 2317.025,257.534 2317.025,252.448 
+				2317.066,252.448 		"/>
+			<polygon fill="#323232" points="2319.613,262.624 2319.613,265.257 2314.523,265.257 2314.523,262.624 2314.537,262.62 
+				2319.613,262.62 		"/>
+			<rect x="2314.502" y="232.341" fill="#323232" width="2.588" height="2.587"/>
+			<polygon fill="#323232" points="2317.066,247.358 2317.066,252.448 2317.025,252.448 2314.434,252.448 2314.434,247.403 
+				2314.569,247.358 		"/>
+			<polygon fill="#323232" points="2314.537,257.534 2314.537,262.62 2314.523,262.624 2311.904,262.624 2311.904,257.534 		"/>
+			<rect x="2311.891" y="229.73" fill="#323232" width="2.588" height="2.588"/>
+			<polygon fill="#323232" points="2311.891,257.534 2311.891,257.579 2309.257,257.579 2309.257,252.538 2309.271,252.493 
+				2311.891,252.493 		"/>
+			<rect x="2309.279" y="227.12" fill="#323232" width="2.589" height="2.588"/>
+			<polygon fill="#323232" points="2309.271,247.448 2309.271,252.493 2309.257,252.538 2306.638,252.538 2306.638,247.494 
+				2306.638,247.448 		"/>
+			<rect x="2306.669" y="224.508" fill="#323232" width="2.588" height="2.589"/>
+			<rect x="2304.059" y="221.894" fill="#323232" width="2.588" height="2.592"/>
+			<polygon fill="#323232" points="2306.638,247.448 2306.638,247.494 2304.027,247.494 2304,247.381 2304,242.404 2306.638,242.404 
+						"/>
+			<rect x="2301.448" y="219.283" fill="#323232" width="2.587" height="2.593"/>
+			<polygon fill="#323232" points="2304.027,247.494 2304.027,249.969 2301.438,249.969 2301.438,247.381 2304,247.381 		"/>
+			<rect x="2298.837" y="249.991" fill="#323232" width="2.589" height="2.593"/>
+			<rect x="2298.837" y="216.672" fill="#323232" width="2.589" height="2.588"/>
+			<polygon fill="#323232" points="2298.823,252.602 2298.823,255.195 2296.235,255.195 2296.235,257.312 2293.603,257.312 
+				2293.603,211.609 2296.235,211.609 2296.235,214.062 2298.814,214.062 2298.814,216.65 2296.235,216.65 2296.235,252.602 		"/>
+		</g>
+	</g>
+</svg>

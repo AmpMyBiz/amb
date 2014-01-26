@@ -1,7 +1,20 @@
 body {
 	font-size: 14px;
-	font-family: bebasregular;
+	font-family: cabin;
 	color: $fontColor;
+}
+
+h1 {
+	font-size: 5em;
+	font-family: bebasRegular;
+	//color: $fontBlack;
+	//padding: 5px 0;
+	//line-height: 0.8em;
+}
+
+h2 {
+	font-size: 2em;
+	padding: 5px 0;
 }
 
 /* ICONS */

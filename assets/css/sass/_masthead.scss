@@ -1,7 +1,7 @@
 .top-nav {
 	background-color: #FFF;
 	height: 4em;
-	border-bottom: 1px solid $lightGray;
+	border-bottom: 2px solid $lightGray2;
 	width: 100%;
 }
 
@@ -21,7 +21,8 @@
  	margin-left: 1em;
  	padding: 13px 8px 0 8px;
  	font-size: 1.1em;
- 	height: 55px;
+ 	height: 54px;
+ 	font-family: bebasRegular
  }
 
  .top-nav-page-links li:first-child {
@@ -44,7 +45,7 @@
  	font-size: 1.2em;
  	background: $blue;
  	border-left: 12px solid $lightBlue;
- 	height: 55px;
+ 	height: 54px;
  }
 
  .profile-nav-user-name {
