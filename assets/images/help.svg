@@ -3,12 +3,12 @@
 	 <style type="text/css">
 
 	 	#cursor {
-	 		-webkit-animation: moveCursorInToOne 2s ease-out 0.5s, 
+	 		<!-- -webkit-animation: moveCursorInToOne 2s ease-out 0.5s, 
 	 			moveBackCursorFromOne 1s ease-out 2.5s,
 	 			moveCursorInToTwo 1.5s ease-out 4s,
-	 			moveBackCursorFromTwo 1s ease-out 5.5s,
-	 			moveCursorInToThree 2s ease-out 6.75s,
-	 			moveBackCursorFromThree 1s ease-out 8.75s;
+	 			moveBackCursorFromTwo 1s ease-out 5.5s, -->
+	 			-webkit-animation: moveCursorInToThree 2s ease-out 0.25s,
+	 			moveBackCursorFromThree 1s ease-out 2.25s;
 	 	}
 
 	 	/* **************************** */
@@ -24,8 +24,8 @@
 	 	}
 
 	 	#knowledge {
-	 		-webkit-animation: rollOpen 0.25s linear 0s, 
-	 			rollOut 0.25s linear 3.5s;
+	 		<!-- -webkit-animation: rollOpen 0.25s linear 0s, 
+	 			rollOut 0.25s linear 3.5s; -->
 	 		-webkit-transform-origin: center center;
 	 		-webkit-animation-fill-mode: forwards;
 	 	}
@@ -47,8 +47,8 @@
 	 	/* **************************** */
 
 	 	#business {
-	 		-webkit-animation: rollOpen 0.25s linear 3.75s,
-	 			rollOut 0.25s linear 6.5s;
+	 		<!-- -webkit-animation: rollOpen 0.25s linear 3.75s,
+	 			rollOut 0.25s linear 6.5s; -->
 	 		-webkit-transform: rotateX(90deg);
 	 		-webkit-transform-origin: center center;
 	 		-webkit-animation-fill-mode: forwards;
@@ -87,45 +87,45 @@
 	 	/* **************************** */
 
 	 	#help {
-	 		-webkit-animation: rollOpen 0.25s linear 6.75s,
-	 			rollOut 0.25s linear 9.5s;
+	 		-webkit-animation: rollOpen 0.25s linear 0s,
+	 			rollOut 0.25s linear 3.5s;
 	 		-webkit-transform: rotateX(90deg);
 	 		-webkit-transform-origin: center center;
 	 		-webkit-animation-fill-mode: forwards;
 	 	}
 
 	 	#files1 {
-	 		-webkit-animation: moveFiles 1s ease-out 7.75s;
+	 		-webkit-animation: moveFiles 1s ease-out 1.25s;
 	 		-webkit-transform-origin: center center;
 	 		-webkit-animation-fill-mode: forwards;
 	 	}
 
 	 	#points1 {
-	 		-webkit-animation: movePoints1 0.15s linear 8.75s;
+	 		-webkit-animation: movePoints1 0.15s linear 2.25s;
 	 		-webkit-transform-origin: center center;
 	 		-webkit-animation-fill-mode: forwards;
 	 	}
 
 	 	#points2 {
-	 		-webkit-animation: movePoints2 0.15s linear 8.9s;
+	 		-webkit-animation: movePoints2 0.15s linear 2.4s;
 	 		-webkit-transform-origin: center center;
 	 		-webkit-animation-fill-mode: forwards;
 	 	}
 
 	 	#points3 {
-	 		-webkit-animation: movePoints3 0.15s linear 9.05s;
+	 		-webkit-animation: movePoints3 0.15s linear 2.55s;
 	 		-webkit-transform-origin: center center;
 	 		-webkit-animation-fill-mode: forwards;
 	 	}
 
 	 	#points4 {
-	 		-webkit-animation: movePoints4 0.15s linear 9.35s;
+	 		-webkit-animation: movePoints4 0.15s linear 2.9s;
 	 		-webkit-transform-origin: center center;
 	 		-webkit-animation-fill-mode: forwards;
 	 	}
 
 	 	#points5 {
-	 		-webkit-animation: movePoints5 0.15s linear 9.2s;
+	 		-webkit-animation: movePoints5 0.15s linear 2.75s;
 	 		-webkit-transform-origin: center center;
 	 		-webkit-animation-fill-mode: forwards;
 	 	}
@@ -316,7 +316,7 @@
 		
 			<text transform="matrix(1 0 0 1 1808.1328 600.0078)" display="inline" fill="#F6881F" font-family="'Franchise-Bold'" font-size="63.6486">Grow Your Business</text>
 	</g>
-	<g id="knowledge">
+	<g id="knowledge" display="none">
 		<rect id="knowledge-fill" x="1814.349" y="384.113" fill="#35B5E4" width="185.991" height="147.884"/>
 		<path id="head-bg_2_" fill="#FFFFFF" d="M1744.603,205.305v328.931h325.483V205.305H1744.603z M1927.128,353.962
 			c-42.089,43.319-62.494,42.382-77.279,31.662s-24.94-49.862-24.94-56.983c0-7.121-5.465-45.667,48.273-72.715
