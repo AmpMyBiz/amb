@@ -6,199 +6,147 @@
 	 		<!-- -webkit-animation: moveCursorInToOne 2s ease-out 0.5s, 
 	 			moveBackCursorFromOne 1s ease-out 2.5s,
 	 			moveCursorInToTwo 1.5s ease-out 4s,
-	 			moveBackCursorFromTwo 1s ease-out 5.5s, -->
-	 			-webkit-animation: moveCursorInToThree 2s ease-out 0.25s,
-	 			moveBackCursorFromThree 1s ease-out 2.25s;
+	 			moveBackCursorFromTwo 1s ease-out 5.5s,
+	 			moveCursorInToThree 2s ease-out 6.75s,
+	 			moveBackCursorFromThree 1s ease-out 8.75s, -->
+	 			-webkit-animation: moveCursorInToFour 2s ease-out 0.25s;
 	 	}
 
 	 	/* **************************** */
-	 	/* ******** KNOWLEDGE ********* */
+	 	/* ********* SPEND ************ */
 	 	/* **************************** */
 
-	 	#knowledge-fill {
-	 		-webkit-animation: fillBrain 2s ease-out 0.5s;
-	 	}
-
-	 	#nob { 
-	 		-webkit-animation: moveNob 2s ease-out 0.5s;
-	 	}
-
-	 	#knowledge {
-	 		<!-- -webkit-animation: rollOpen 0.25s linear 0s, 
-	 			rollOut 0.25s linear 3.5s; -->
-	 		-webkit-transform-origin: center center;
-	 		-webkit-animation-fill-mode: forwards;
-	 	}
-
-	 	@-webkit-keyframes fillBrain {
-	 		0% { -webkit-transform: translateY(0px); }
-	 		50% { -webkit-transform: translateY(0px); }
-	 		100% { -webkit-transform: translateY(-140px); }
-	 	}
-
-	 	@-webkit-keyframes moveNob {
-	 		0% { -webkit-transform: translateY(0px); }
-	 		50% { -webkit-transform: translateY(0px); }
-	 		100% { -webkit-transform: translateY(-220px); }
-	 	}
-
-	 	/* **************************** */
-	 	/* ******** BUSINESS ********** */
-	 	/* **************************** */
-
-	 	#business {
-	 		<!-- -webkit-animation: rollOpen 0.25s linear 3.75s,
-	 			rollOut 0.25s linear 6.5s; -->
+	 	#spend {
+	 		-webkit-animation: rollOpen 0.25s linear 0s,
+	 			rollOut 0.25s linear 3s;
 	 		-webkit-transform: rotateX(90deg);
 	 		-webkit-transform-origin: center center;
 	 		-webkit-animation-fill-mode: forwards;
 	 	}
 
-	 	#building {
-	 		-webkit-animation: scaleUpBusiness 0.75s ease-out 4.75s;
+	 	#button {
+	 		-webkit-animation: clickButton 0.25s linear 1.25s;
 	 		-webkit-transform-origin: center center;
-	 		-webkit-animation-fill-mode: forwards;
 	 	}
 
-	 	#selector {
-	 		-webkit-animation: showSelector 0.01s linear 4.5s,
-	 			hideSelector 0.01s linear 5.6s;
-	 		-webkit-animation-fill-mode: forwards;
+	 	#spent-point {
+	 		-webkit-animation: showPoints 0.25s linear 1.5s 5;
 	 		opacity: 0;
 	 	}
 
-	 	@-webkit-keyframes scaleUpBusiness {
-	 		0% { -webkit-transform: scale( 1 ); }
-	 		100% { -webkit-transform: scale( 1.2 ) translateY(-30px); }
+	 	#spent-point-container {
+	 		-webkit-animation: pushPoints 0.25s linear 1.5s 5;
 	 	}
 
-	 	@-webkit-keyframes showSelector {
+	 	#discount {
+	 		-webkit-animation: scaleDiscount 0.25s linear 1.75s 5;
+	 		-webkit-transform-origin: center center;
+	 	}
+
+	 	#site1 {
+	 		-webkit-animation: rotateSite1 0.25s ease-out 1.75s 5;
+	 		-webkit-transform-origin: center center;
+	 	}
+
+	 	#site2 {
+	 		-webkit-animation: rotateSite1 0.25s ease-out 1.8s 5;
+	 		-webkit-transform-origin: center center;
+	 	}
+
+	 	#dText1 {
+	 		opacity: 1;
+	 		-webkit-animation: showHideDiscountBeginning .25s ease-in-out 1.75s;
+	 		-webkit-animation-fill-mode: forwards;
+	 	}
+
+	 	#dText2 {
+	 		opacity: 0;
+	 		-webkit-animation: showHideDiscountMiddle .25s ease-in-out 2s;
+	 		-webkit-animation-fill-mode: forwards;
+	 	}
+
+	 	#dText3 {
+	 		opacity: 0;
+	 		-webkit-animation: showHideDiscountMiddle .25s ease-in-out 2.25s;
+	 		-webkit-animation-fill-mode: forwards;
+	 	}
+
+	 	#dText4 {
+	 		opacity: 0;
+	 		-webkit-animation: showHideDiscountMiddle .25s ease-in-out 2.5s;
+	 		-webkit-animation-fill-mode: forwards;
+	 	}
+
+	 	#dText5 {
+	 		opacity: 0;
+	 		-webkit-animation: showHideDiscountEnd .25s ease-in-out 2.75s;
+	 		-webkit-animation-fill-mode: forwards;
+	 	}
+
+	 	@-webkit-keyframes clickButton {
+	 		0% {  }
+	 		50% { -webkit-transform: scale( 1.2 ); }
+	 		100% { -webkit-transform: scale( 1 ); }
+	 	}
+
+	 	@-webkit-keyframes showPoints {
 	 		0% { opacity: 0; }
-	 		100% { opacity: 1; }
+	 		5% { opacity: 1; }
+	 		95% { opacity: 1; }
+	 		100% { opacity: 0; }
+
 	 	}
 
-	 	@-webkit-keyframes hideSelector {
+	 	@-webkit-keyframes pushPoints {
+	 		0% {  }
+	 		100% { -webkit-transform: translateX( 200px ); }
+	 	}
+
+	 	@-webkit-keyframes scaleDiscount {
+	 		0% { -webkit-transform: scale(1); }
+	 		50% { -webkit-transform: scale(1.5); }
+	 		100% {  -webkit-transform: scale(1); }
+	 	}
+
+	 	@-webkit-keyframes rotateSite1 {
+	 		0% { -webkit-transform: rotate(0deg); }
+	 		50% { -webkit-transform: rotate(-10deg); }
+	 		100% { -webkit-transform: rotate(0deg); }
+	 	}
+
+	 	@-webkit-keyframes rotateSite2 {
+	 		0% { -webkit-transform: rotate(0deg); }
+	 		50% { -webkit-transform: rotate(-5deg); }
+	 		100% { -webkit-transform: rotate(0deg); }
+	 	}
+
+	 	@-webkit-keyframes showHideDiscountBeginning {
 	 		0% { opacity: 1; }
+	 		99% { opacity: 1; }
 	 		100% { opacity: 0; }
 	 	}
 
-	 	/* **************************** */
-	 	/* ************ HELP ********** */
-	 	/* **************************** */
-
-	 	#help {
-	 		-webkit-animation: rollOpen 0.25s linear 0s,
-	 			rollOut 0.25s linear 3.5s;
-	 		-webkit-transform: rotateX(90deg);
-	 		-webkit-transform-origin: center center;
-	 		-webkit-animation-fill-mode: forwards;
+	 	@-webkit-keyframes showHideDiscountMiddle {
+	 		0% { opacity: 0; }
+	 		1% { opacity: 1; }
+	 		99% { opacity: 1; }
+	 		100% { opacity: 0; }
 	 	}
 
-	 	#files1 {
-	 		-webkit-animation: moveFiles 1s ease-out 1.25s;
-	 		-webkit-transform-origin: center center;
-	 		-webkit-animation-fill-mode: forwards;
-	 	}
-
-	 	#points1 {
-	 		-webkit-animation: movePoints1 0.15s linear 2.25s;
-	 		-webkit-transform-origin: center center;
-	 		-webkit-animation-fill-mode: forwards;
-	 	}
-
-	 	#points2 {
-	 		-webkit-animation: movePoints2 0.15s linear 2.4s;
-	 		-webkit-transform-origin: center center;
-	 		-webkit-animation-fill-mode: forwards;
-	 	}
-
-	 	#points3 {
-	 		-webkit-animation: movePoints3 0.15s linear 2.55s;
-	 		-webkit-transform-origin: center center;
-	 		-webkit-animation-fill-mode: forwards;
-	 	}
-
-	 	#points4 {
-	 		-webkit-animation: movePoints4 0.15s linear 2.9s;
-	 		-webkit-transform-origin: center center;
-	 		-webkit-animation-fill-mode: forwards;
-	 	}
-
-	 	#points5 {
-	 		-webkit-animation: movePoints5 0.15s linear 2.75s;
-	 		-webkit-transform-origin: center center;
-	 		-webkit-animation-fill-mode: forwards;
-	 	}
-
-	 	@-webkit-keyframes moveFiles {
-	 		0% {  }
-	 		100% { -webkit-transform: translateX( 400px ); }
-	 	}
-
-	 	@-webkit-keyframes movePoints1 {
-	 		0% {  }
-	 		50% { -webkit-transform: translateX( -85px ) translateY( -85px ) scale( 1.5 ); }
-	 		100% { -webkit-transform: translateX( -75px ) translateY( -75px ) scale( 1 );; }
-	 	}
-
-	 	@-webkit-keyframes movePoints2 {
-	 		0% {  }
-	 		50% { -webkit-transform: translateX( 85px ) translateY( -85px ) scale( 1.5 ); }
-	 		100% { -webkit-transform: translateX( 75px ) translateY( -75px ) scale( 1 );; }
-	 	}
-
-	 	@-webkit-keyframes movePoints3 {
-	 		0% {  }
-	 		50% { -webkit-transform: translateX( -105px ) translateY( 35px ) scale( 1.5 ); }
-	 		100% { -webkit-transform: translateX( -95px ) translateY( 25px ) scale( 1 );; }
-	 	}
-
-	 	@-webkit-keyframes movePoints4 {
-	 		0% {  }
-	 		50% { -webkit-transform: translateX( 15px ) translateY( -115px ) scale( 1.5 ); }
-	 		100% { -webkit-transform: translateX( 5px ) translateY( -105px ) scale( 1 );; }
-	 	}
-
-	 	@-webkit-keyframes movePoints5 {
-	 		0% {  }
-	 		50% { -webkit-transform: translateX( -45px ) translateY( -155px ) scale( 1.5 ); }
-	 		100% { -webkit-transform: translateX( -35px ) translateY( -145px ) scale( 1 );; }
+	 	@-webkit-keyframes showHideDiscountEnd {
+	 		0% { opacity: 0; }
+	 		1% { opacity: 1; }
+	 		100% { opacity: 1; }
 	 	}
 
 	 	/* **************************** */
 	 	/* ***** CURSOR ANIMATIONS **** */
 	 	/* **************************** */
 
-	 	@-webkit-keyframes moveCursorInToOne {
-	 		0% {  }
-	 		50% { -webkit-transform: translateX(-150px) translateY(260px); }
-	 		100% { -webkit-transform: translateX(-150px) translateY(40px); }
-	 	}
-
-	 	@-webkit-keyframes moveBackCursorFromOne {
-	 		0% { -webkit-transform: translateX(-150px) translateY(40px); }
-	 		100% { -webkit-transform: translateX(0px) translateY(0px); }
-	 	}
-
-	 	@-webkit-keyframes moveCursorInToTwo {
+	 	@-webkit-keyframes moveCursorInToFour {
 	 		0% { -webkit-transform: translateX(0px) translateY(0px); }
-	 		50% { -webkit-transform: translateX(-145px) translateY(-6px); }
-	 		100% { -webkit-transform: translateX(-115px) translateY(-70px); }
-	 	}
-
-	 	@-webkit-keyframes moveBackCursorFromTwo {
-	 		0% { -webkit-transform: translateX(-130px) translateY(-70px); }
-	 		100% { -webkit-transform: translateX(0px) translateY(0px); }
-	 	}
-
-	 	@-webkit-keyframes moveCursorInToThree {
-	 		0% { -webkit-transform: translateX(0px) translateY(0px); }
-	 		50% { -webkit-transform: translateX(-500px) translateY(100px); }
-	 		100% { -webkit-transform: translateX(-100px) translateY(100px); }
-	 	}
-
-	 	@-webkit-keyframes moveBackCursorFromThree {
-	 		0% { -webkit-transform: translateX(-100px) translateY(100px); }
+	 		50% { -webkit-transform: translateX(-300px) translateY(250px); }
+	 		65% { -webkit-transform: translateX(-300px) translateY(250px); }
 	 		100% { -webkit-transform: translateX(0px) translateY(0px); }
 	 	}
 
@@ -218,125 +166,67 @@
 
 	 </style>
 
-	<g id="help">
-		<text transform="matrix(1 0 0 1 1737.2344 607.1445)" fill="#864C9E" font-family="'Franchise-Bold'" font-size="63.6486">Help Others and Earn Points</text>
-		<g id="points5">
-			<circle fill="#C5DC71" stroke="#99CA3C" stroke-width="8.339" stroke-miterlimit="10" cx="1813.584" cy="331.78" r="26.934"/>
+	<g id="spend">
+		<text transform="matrix(1 0 0 1 1687.2344 607.1445)" fill="#659A41" font-family="'Franchise-Bold'" font-size="52">Spend Points for Freebies and Discounts!</text>
+		<g id="main-site">
 			
-				<text transform="matrix(1 0 0 1 1795.041 339.0742)" fill="#659A41" stroke="#649941" stroke-width="1.0424" stroke-miterlimit="10" font-family="'Cabin-Bold'" font-size="19.3423">100</text>
-		</g>
-		<g id="points4">
-			<circle fill="#C5DC71" stroke="#99CA3C" stroke-width="8.339" stroke-miterlimit="10" cx="1853.584" cy="311.78" r="26.934"/>
-			
-				<text transform="matrix(1 0 0 1 1835.041 319.0742)" fill="#659A41" stroke="#649941" stroke-width="1.0424" stroke-miterlimit="10" font-family="'Cabin-Bold'" font-size="19.3423">100</text>
-		</g>
-		<g id="points3">
-			<circle fill="#C5DC71" stroke="#99CA3C" stroke-width="8.339" stroke-miterlimit="10" cx="1783.584" cy="361.78" r="26.934"/>
-			
-				<text transform="matrix(1 0 0 1 1765.041 369.0742)" fill="#659A41" stroke="#649941" stroke-width="1.0424" stroke-miterlimit="10" font-family="'Cabin-Bold'" font-size="19.3423">100</text>
-		</g>
-		<g id="points2">
-			<circle fill="#C5DC71" stroke="#99CA3C" stroke-width="8.339" stroke-miterlimit="10" cx="1873.584" cy="351.78" r="26.934"/>
-			
-				<text transform="matrix(1 0 0 1 1855.041 359.0742)" fill="#659A41" stroke="#649941" stroke-width="1.0424" stroke-miterlimit="10" font-family="'Cabin-Bold'" font-size="19.3423">100</text>
-		</g>
-		<g id="points1">
-			<circle fill="#C5DC71" stroke="#99CA3C" stroke-width="8.339" stroke-miterlimit="10" cx="1753.584" cy="320.78" r="26.934"/>
-			
-				<text transform="matrix(1 0 0 1 1735.041 328.0742)" fill="#659A41" stroke="#649941" stroke-width="1.0424" stroke-miterlimit="10" font-family="'Cabin-Bold'" font-size="19.3423">100</text>
-		</g>
-		<circle id="behind_x5F_head_x5F_cicle" fill="#FFFFFF" cx="1811.483" cy="333.605" r="89.356"/>
-		<path id="head1_1_" fill="#FFFFFF" stroke="#757576" stroke-width="6" stroke-miterlimit="10" d="M1921.923,370.248
-			c-3.215-3.709-15.084-11.869-16.32-22.996s0.248-29.178,0.248-29.178s-6.406-56.626-61.312-72.943c0,0-22.513-7.42-55.151,0
-			c-32.64,7.42-70.72,29.673-76.901,70.72s26.211,81.35,27.447,84.07s10.139,35.109-9.643,105.582h114.978
-			c0,0-5.191-28.932,12.117-43.272c0,0,5.688-3.955,21.76-3.214s23.242-4.451,24.973-9.396c1.731-4.945-3.955-10.137-4.203-12.609
-			c-0.246-2.473,4.946-8.902,8.902-11.622s-2.721-8.654-3.957-8.901c0,0,5.688-3.462,6.43-4.451s-1.771-12.273-0.989-14.342
-			c2.874-7.606,14.774-9.306,16.814-13.026C1930.175,379.088,1925.137,373.957,1921.923,370.248z M1828.462,357.185
-			c-42.089,42.089-62.493,41.178-77.278,30.763c-14.785-10.416-24.94-48.445-24.94-55.364c0-6.918-5.465-44.368,48.273-70.647
-			c0,0,49.23-16.508,73.414-2.576c0,0,43.736,18.316,43.736,57.799C1891.667,345.073,1856.317,329.328,1828.462,357.185z"/>
-		<path id="head2" fill="#757576" d="M2077.385,384.668c2.04,3.721,13.94,5.42,16.814,13.026c0.781,2.068-1.731,13.353-0.989,14.342
-			s6.43,4.451,6.43,4.451c-1.236,0.247-7.913,6.182-3.957,8.901s9.148,9.149,8.902,11.622c-0.248,2.473-5.935,7.664-4.203,12.609
-			c1.73,4.945,8.9,10.138,24.973,9.396s21.76,3.214,21.76,3.214c17.309,14.341,12.117,43.272,12.117,43.272h114.978
-			c-19.781-70.473-10.879-102.861-9.643-105.582s33.629-43.023,27.447-84.07s-44.262-63.3-76.901-70.72
-			c-32.639-7.42-55.151,0-55.151,0c-54.905,16.317-61.312,72.943-61.312,72.943s1.484,18.051,0.248,29.178
-			s-13.105,19.287-16.32,22.996C2079.363,373.957,2074.325,379.088,2077.385,384.668z M2112.833,317.158
-			c0-39.482,43.736-57.799,43.736-57.799c24.184-13.932,73.414,2.576,73.414,2.576c53.738,26.279,48.273,63.729,48.273,70.647
-			c0,6.919-10.155,44.948-24.94,55.364c-14.785,10.415-35.189,11.326-77.278-30.763
-			C2148.183,329.328,2112.833,345.073,2112.833,317.158z"/>
-		<g id="files1">
-			<path fill="#9C69AC" d="M1822.957,270.466h-32.013v69.071h52.579v-50.64L1822.957,270.466z M1835.569,332.553h-36.477v-4.269
-				h36.477V332.553z M1835.569,323.045h-36.477v-4.268h36.477V323.045z M1835.569,314.703h-36.477v-4.27h36.477V314.703z
-				 M1835.569,305.002h-36.477v-4.269h36.477V305.002z M1842.165,293.167h-19.295h-3.493v-3.493v-17.648h3.493v17.648h19.295V293.167
-				z"/>
-			<polygon fill="#9C69AC" points="1815.492,343.797 1779.017,343.797 1779.017,339.528 1786.673,339.528 1786.673,334.289 
-				1779.017,334.289 1779.017,330.021 1786.673,330.021 1786.673,325.947 1779.017,325.947 1779.017,321.678 1786.673,321.678 
-				1786.673,316.246 1779.017,316.246 1779.017,311.978 1786.673,311.978 1786.673,281.71 1770.867,281.71 1770.867,350.781 
-				1823.446,350.781 1823.446,343.785 1815.492,343.785 		"/>
-		</g>
-		<g id="files2">
-			<path fill="#9C69AC" d="M1822.957,270.466h-32.013v69.071h52.579v-50.64L1822.957,270.466z M1835.569,332.553h-36.477v-4.269
-				h36.477V332.553z M1835.569,323.045h-36.477v-4.268h36.477V323.045z M1835.569,314.703h-36.477v-4.27h36.477V314.703z
-				 M1835.569,305.002h-36.477v-4.269h36.477V305.002z M1842.165,293.167h-19.295h-3.493v-3.493v-17.648h3.493v17.648h19.295V293.167
-				z"/>
-			<polygon fill="#9C69AC" points="1815.492,343.797 1779.017,343.797 1779.017,339.528 1786.673,339.528 1786.673,334.289 
-				1779.017,334.289 1779.017,330.021 1786.673,330.021 1786.673,325.947 1779.017,325.947 1779.017,321.678 1786.673,321.678 
-				1786.673,316.246 1779.017,316.246 1779.017,311.978 1786.673,311.978 1786.673,281.71 1770.867,281.71 1770.867,350.781 
-				1823.446,350.781 1823.446,343.785 1815.492,343.785 		"/>
-		</g>
-	</g>
-	<g id="business">
-		<g id="building" display="inline">
-			<path fill="#757576" d="M1886.632,368.062c8.398,0,15.209-6.771,15.287-15.152h1.787c0.078,8.381,6.889,15.152,15.288,15.152
-				c8.398,0,15.21-6.771,15.286-15.152h1.789c0.076,8.381,6.888,15.152,15.287,15.152c8.398,0,15.209-6.771,15.287-15.152h2.674
-				c0.078,8.381,6.889,15.152,15.288,15.152c8.398,0,15.21-6.771,15.286-15.152h1.789c0.076,8.381,6.888,15.152,15.287,15.152
-				c8.398,0,15.209-6.771,15.287-15.152h1.787c0.078,8.381,6.889,15.152,15.288,15.152c8.398,0,15.21-6.771,15.286-15.152h2.232
-				c0.076,8.381,6.888,15.152,15.287,15.152c8.398,0,15.209-6.771,15.287-15.152h1.787c0.078,8.381,6.889,15.152,15.288,15.152
-				c8.398,0,15.21-6.771,15.286-15.152l-29.25-50.539h-66.056v-16.846h22.362c5.523,0,10-4.477,10-10v-29.463c0-5.523-4.477-10-10-10
-				h-110.779c-5.523,0-10,4.477-10,10v29.463c0,5.523,4.477,10,10,10h22.362v16.846h-65.611l-24.993,37.909
-				c-5.75,10.558-6.475,12.63-6.475,12.63C1871.421,361.291,1878.232,368.062,1886.632,368.062z M1983.94,285.525h34.136v16.846
-				h-34.136V285.525z"/>
-			<path fill="#FDBA33" d="M1901.482,466.4h198.608v-92.654h-198.608V466.4z M1984.384,389.263h98.86v61.179h-98.86V389.263z
-				 M1917.442,389.263h50.538v61.179h-50.538V389.263z"/>
-			<polygon fill="#757576" points="2127.576,478.37 2121.813,478.37 2121.813,471.721 1881.533,471.721 1881.533,478.37 
-				1875.77,478.37 1875.77,489.01 1869.493,489.01 1869.493,500.062 2133.493,500.062 2133.493,489.01 2127.576,489.01 		"/>
-			<text transform="matrix(1 0 0 1 1966.4717 272.3672)" fill="#FFFFFF" font-family="'Franchise-Bold'" font-size="38.1165">STORE</text>
-			<g id="selector" display="inline">
+				<rect id="window_1_" x="1866" y="146.95" fill="#FFFFFF" stroke="#848484" stroke-width="7.6264" stroke-miterlimit="10" width="268" height="372.05"/>
+			<g id="button">
+				<path fill="#659A41" d="M2063.302,474.645c0,4.521-3.664,8.186-8.186,8.186h-116.232c-4.521,0-8.186-3.665-8.186-8.186v-39.289
+					c0-4.521,3.665-8.186,8.186-8.186h116.232c4.521,0,8.186,3.664,8.186,8.186V474.645z"/>
+				<text transform="matrix(1 0 0 1 1940.918 464.6318)" fill="#FFFFFF" font-family="'Franchise-Bold'" font-size="27.1763">Spend Points!</text>
+			</g>
+			<g id="site3">
 				
-					<rect x="1854.761" y="211.213" fill="none" stroke="#757576" stroke-width="4" stroke-miterlimit="10" width="296.984" height="311.902"/>
+					<rect x="1960.603" y="262.084" transform="matrix(0.9999 -0.0117 0.0117 0.9999 -3.6152 23.5605)" fill="#C5DC71" stroke="#659A41" stroke-width="9.1339" stroke-miterlimit="10" width="105.798" height="117.871"/>
+				<polyline fill="none" stroke="#659A41" stroke-width="4.1682" stroke-miterlimit="10" points="1999.736,300.897 2005.588,294.48 
+					2010.742,300.769 2015.748,294.36 2021.748,300.642 2028.024,294.217 2034.024,300.498 2040.299,294.073 2046.3,300.354 			"/>
+			</g>
+			<g id="site2">
 				
-					<rect x="1843.54" y="199.992" fill="#FFFFFF" stroke="#757576" stroke-width="2" stroke-miterlimit="10" width="22.441" height="22.441"/>
+					<rect x="1954.666" y="242.059" transform="matrix(0.9252 -0.3794 0.3794 0.9252 34.8662 784.4821)" fill="#659A41" width="105.799" height="123.461"/>
+				<polyline fill="none" stroke="#FFFFFF" stroke-width="4.1682" stroke-miterlimit="10" points="1991.595,283.183 1994.668,275.06 
+					2001.777,279.007 2004.068,271.204 2016.224,275.076 2015.428,266.546 2023.32,270.172 2026.785,261.888 2034.678,265.514 			"/>
+			</g>
+			<g id="site1">
 				
-					<rect x="2140.524" y="199.992" fill="#FFFFFF" stroke="#757576" stroke-width="2" stroke-miterlimit="10" width="22.441" height="22.441"/>
+					<rect x="1940.379" y="227.569" transform="matrix(0.784 -0.6207 0.6207 0.784 249.998 1296.1782)" fill="#FFFFFF" stroke="#848484" stroke-width="8.8092" stroke-miterlimit="10" width="94.687" height="122.502"/>
+				<polyline fill="none" stroke="#C5DC71" stroke-width="4.1682" stroke-miterlimit="10" points="1967.444,276.052 1968.15,267.394 
+					1976.074,269.22 1976.116,261.088 1984.703,262.388 1985.741,253.468 1994.329,254.768 1995.366,245.848 2003.954,247.147 			"/>
+			</g>
+			<g id="discount">
+				<circle fill="#FFFFFF" stroke="#EF4849" stroke-width="18" stroke-miterlimit="10" cx="1965.249" cy="337.751" r="59.63"/>
+				<text id="dText5" transform="matrix(1 0 0 1 1934.1465 342.5078)" font-family="'Franchise-Bold'" font-size="51.6038">50%</text>
+				<text id="dText4" transform="matrix(1 0 0 1 1934.1465 342.5078)" font-family="'Franchise-Bold'" font-size="51.6038">40%</text>
+				<text id="dText3" transform="matrix(1 0 0 1 1934.1465 342.5078)" font-family="'Franchise-Bold'" font-size="51.6038">30%</text>
+				<text id="dText2" transform="matrix(1 0 0 1 1934.1465 342.5078)" font-family="'Franchise-Bold'" font-size="51.6038">20%</text>
+				<text id="dText1" transform="matrix(1 0 0 1 1934.1465 342.5078)" font-family="'Franchise-Bold'" font-size="51.6038">10%</text>
+				<text transform="matrix(1 0 0 1 1945.2407 370.6738)" font-family="'Cabin-Regular'" font-size="28.6311">off!</text>
+			</g>
+			<text transform="matrix(1 0 0 1 1890.8477 197.6802)" fill="#659A41" font-family="'Franchise-Bold'" font-size="45.4074">Build Your Site!</text>
+			<g id="browser">
+				<rect x="1862.167" y="112.62" fill="#848484" width="275.693" height="31.153"/>
+				<rect x="1877.5" y="132.75" fill="#FFFFFF" width="236.5" height="7"/>
+				<rect x="2118.25" y="112.62" fill="#EF4849" width="19.61" height="7.13"/>
+				<polyline fill="none" stroke="#757576" stroke-width="1.055" stroke-miterlimit="10" points="1883.324,138.044 1886.413,134.661 
+					1889.13,137.979 1891.771,134.601 1894.936,137.914 1898.248,134.528 1901.412,137.842 1904.723,134.456 1907.887,137.77 			"/>
+				<polyline fill="none" stroke="#757576" stroke-width="1.055" stroke-miterlimit="10" points="1907.383,138.044 1910.472,134.661 
+					1913.188,137.979 1915.83,134.601 1918.994,137.914 1922.307,134.528 1925.471,137.842 1928.781,134.456 1931.945,137.77 			"/>
+				<circle fill="none" stroke="#757576" stroke-width="1.055" stroke-miterlimit="10" cx="2119.23" cy="115.564" r="2.012"/>
 				
-					<rect x="2140.524" y="511.895" fill="#FFFFFF" stroke="#757576" stroke-width="2" stroke-miterlimit="10" width="22.441" height="22.441"/>
-				
-					<rect x="1843.54" y="511.895" fill="#FFFFFF" stroke="#757576" stroke-width="2" stroke-miterlimit="10" width="22.441" height="22.441"/>
+					<line fill="none" stroke="#757576" stroke-width="1.055" stroke-miterlimit="10" x1="2120.358" y1="117.231" x2="2122.517" y2="119.256"/>
 			</g>
 		</g>
-		
-			<text transform="matrix(1 0 0 1 1808.1328 600.0078)" display="inline" fill="#F6881F" font-family="'Franchise-Bold'" font-size="63.6486">Grow Your Business</text>
-	</g>
-	<g id="knowledge" display="none">
-		<rect id="knowledge-fill" x="1814.349" y="384.113" fill="#35B5E4" width="185.991" height="147.884"/>
-		<path id="head-bg_2_" fill="#FFFFFF" d="M1744.603,205.305v328.931h325.483V205.305H1744.603z M1927.128,353.962
-			c-42.089,43.319-62.494,42.382-77.279,31.662s-24.94-49.862-24.94-56.983c0-7.121-5.465-45.667,48.273-72.715
-			c0,0,49.23-16.99,73.414-2.65c0,0,43.737,18.852,43.737,59.49C1990.333,341.496,1954.983,325.29,1927.128,353.962z"/>
-		<path id="head" fill="#FFFFFF" stroke="#757576" stroke-width="6" stroke-miterlimit="10" d="M2016.59,362.798
-			c-3.215-3.709-15.084-11.869-16.32-22.996c-1.236-11.127,0.248-29.178,0.248-29.178s-6.407-56.626-61.312-72.944
-			c0,0-22.513-7.42-55.151,0c-32.64,7.42-70.719,29.673-76.901,70.72c-6.182,41.047,26.21,81.35,27.447,84.071
-			c1.236,2.721,10.138,35.11-9.644,105.583h114.979c0,0-5.191-28.932,12.117-43.273c0,0,5.688-3.955,21.76-3.213
-			c16.073,0.74,23.243-4.451,24.973-9.396c1.731-4.945-3.955-10.137-4.203-12.609c-0.246-2.473,4.946-8.902,8.903-11.623
-			c3.955-2.719-2.721-8.654-3.957-8.9c0,0,5.688-3.463,6.43-4.451c0.742-0.99-1.771-12.274-0.99-14.342
-			c2.875-7.607,14.775-9.307,16.814-13.027C2024.842,371.638,2019.803,366.507,2016.59,362.798z M1923.128,349.736
-			c-42.089,42.088-62.494,41.178-77.279,30.762s-24.94-48.445-24.94-55.364c0-6.918-5.465-44.368,48.273-70.648
-			c0,0,49.23-16.507,73.414-2.575c0,0,43.737,18.316,43.737,57.798C1986.333,337.624,1950.983,321.879,1923.128,349.736z"/>
-		<g id="slider">
-			<rect id="groove" x="2125.162" y="234.383" fill="#323232" width="9.848" height="266.501"/>
-			<path id="nob" fill="#D2D2D2" stroke="#757576" stroke-width="4" stroke-miterlimit="10" d="M2164.584,475.555
-				c0,2.762-2.238,5-5,5h-58.996c-2.762,0-5-2.238-5-5v-12.5c0-2.76,2.238-5,5-5h58.996c2.762,0,5,2.24,5,5V475.555z"/>
+		<g id="spent-point-container">
+			<g id="spent-point">
+				<circle fill="#C5DC71" stroke="#99CA3C" stroke-width="8.339" stroke-miterlimit="10" cx="1760.584" cy="337.169" r="26.934"/>
+				
+					<text transform="matrix(1 0 0 1 1742.041 344.4629)" fill="#659A41" stroke="#649941" stroke-width="1.0424" stroke-miterlimit="10" font-family="'Cabin-Bold'" font-size="19.3423">100</text>
+			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 1782.1006 595.6953)" fill="#0099CC" font-family="'Franchise-Bold'" font-size="63.6486">Grow Your Knowledge</text>
 	</g>
+
+	
 	<g id="cursor">
 		<polygon id="bg" display="inline" fill="#FFFFFF" points="2295.09,215.489 2296.235,255.195 2304.027,247.494 2305.578,246.297 
 			2306.638,247.448 2309.257,252.538 2311.891,257.579 2314.523,262.624 2319.613,262.624 2319.613,257.534 2317.025,252.448 
