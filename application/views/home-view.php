@@ -8,29 +8,55 @@
 
 	<div class="row">
 
-		<div class="large-5 large-centered medium-6 medium-centered small-10 small-centered columns home-above-fold-header-image">
-			<img src="http://www.fillmurray.com/450/125">
+		<div class="home-logo large-2 medium-2 small-2 left columns">
+			<img src="http://fillmurray.com/200/75">
 		</div>
+
+		<div class="video-button-container right large-2 medium-2 small-2 columns">
+
+			<span class="video-button">Watch Video</span>
+
+		</div> <!-- end .video-button -->
 
 	</div>
 
+	<div class="row home-middle-logo">
+
+		<div class="small-centered small-4 columns">
+
+			<img src="http://fillmurray.com/300/75">
+
+		</div>
+
+	</div> <!-- end .home-middle-logo -->
+
 	<div class="row">
 
-		<div class="large-4 large-offset-0 medium-5 medium-offset-1 columns left">
-			<h2 class="subheader">It takes a village to grow a business.</h2>
-			<p class="home-above-fold-description white-text">Williamsburg sed farm-to-table slow-carb distillery. Deep v cray dolor, delectus officia ullamco chambray. YOLO you probably haven't heard of them Helvetica sustainable Terry Richardson, Blue Bottle 3 wolf moon placeat irony photo booth. </p>
-			<span class="button left hide-for-medium-down">Try a Course</span>
-			<span class="button success right hide-for-medium-down">Sign Up Free</span>
-			<span class="button left small hide-for-large">Try a Course</span>
-			<span class="button alert right small hide-for-large">Sign Up Free</span>
-		</div>
+		<div class="home-signup-container large-5 medium-6 small-10 small-centered columns">
 
+			<form method="post" action="" id="early-signup-form">
 
+				<div class="home-email-signup">
 
-		<div class="large-1 right columns">
-			Watch Video
-		</div>
+					<div class="row">
+
+						<div class="home-email-signup-input large-8 medium-7 left small-8 columns left"><input type="email" name="email" placeholder="Email" /></div>
+						<div class="home-email-signup-submit large-3 right medium-4 small-4 columns"><input type="submit" value="Sign me up!" /></div>
+
+					</div>
+
+				</div> <!-- end .home-email-signup -->
+
+			</form>
+
+		</div> <!-- end .home-signup-container -->
 
 	</div>
 
 </div>
+
+<div class="small-video-button-container right large-2 medium-2 small-2colummns">
+
+	<span class="video-button">Watch Video</span>
+
+</div> <!-- end .video-button -->

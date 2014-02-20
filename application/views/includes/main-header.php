@@ -4,7 +4,7 @@
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<title>Amp My Biz Up!</title>
+	<title>LaunchGang - It takes a Village to grow a Business</title>
 
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/normalize.css'); ?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/foundation.min.css'); ?>">

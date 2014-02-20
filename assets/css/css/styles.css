@@ -224,132 +224,17 @@ h2 {
   overflow: hidden; }
 
 .svg-container {
-  width: 4000px;
+  width: 2000px;
+  height: 300px;
   position: absolute;
   left: 50%;
   margin-left: -2000px;
-  top: 0; }
-
-.svg-container object {
-  width: 100%; }
+  top: 0;
+  overflow: hidden;
+  border: 2px solid red; }
 
 .home-above-fold-header-image {
   margin-bottom: 20px; }
 
 .home-above-fold-intro {
   margin-top: 16px; }
-
-.home-logo {
-  margin-top: 1em; }
-
-.video-button {
-  background: #ffbb33;
-  text-align: center;
-  padding: 10px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  font-family: cabin;
-  color: #FFFFFF;
-  font-size: 1.25em;
-  font-weight: bold;
-  margin-top: 0.778em;
-  word-break: keep-all;
-  float: left;
-  cursor: pointer; }
-
-.video-button:hover {
-  background: #ffd980; }
-
-.home-email-signup {
-  margin-top: 9em; }
-
-.home-email-signup-input input {
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  margin-top: 0.75em;
-  border: solid 1px #b4b4b4; }
-
-.home-email-signup-submit input {
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  padding: 15px;
-  background: #aa66cc;
-  border: none;
-  color: #FFF;
-  font-size: 1.5em; }
-
-.home-email-signup-submit input:hover {
-  background: #d6adeb; }
-
-.small-watch-button {
-  display: block; }
-
-.small-video-button-container {
-  display: none; }
-
-.home-middle-logo {
-  display: none;
-  margin: 0 auto; }
-
-/* ******************* */
-/* *** MEDIA QUERIES * */
-/* ******************* */
-@media screen and (max-width: 800px) {
-  .home-above-fold-container {
-    height: 400px; }
-
-  .svg-container {
-    width: 3000px;
-    height: 400px;
-    margin-left: -1500px; }
-
-  .video-button {
-    padding: 8px 10px;
-    font-size: 1em;
-    margin-top: 1em; }
-
-  .home-email-signup {
-    margin-top: 4em; }
-
-  .home-email-signup-input input {
-    margin-top: 0; }
-
-  .home-email-signup-submit input {
-    padding: 10px;
-    font-size: 1em; } }
-/* SMALL */
-@media screen and (max-width: 640px) {
-  .home-email-signup {
-    margin-top: 3em; } }
-@media screen and (max-width: 545px) {
-  .video-button-container {
-    display: none; }
-
-  .small-video-button-container {
-    display: block; }
-
-  .home-logo {
-    display: none; }
-
-  .home-email-signup {
-    margin-top: 8em; }
-
-  .home-middle-logo {
-    display: block; } }
-@media screen and (max-width: 400px) {
-  .home-above-fold-container {
-    height: 300px; }
-
-  .svg-container {
-    width: 2000px;
-    height: 300px;
-    margin-left: -1000px; }
-
-  .home-email-signup {
-    margin-top: 4em; }
-
-  .small-watch-button {
-    display: block; } }
