@@ -8,7 +8,8 @@ FONTS
   src: url("../fonts/BEBAS___-webfont.eot");
   src: url("../fonts/BEBAS___-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/BEBAS___-webfont.woff") format("woff"), url("../fonts/BEBAS___-webfont.ttf") format("truetype"), url("../fonts/BEBAS___-webfont.svg#bebasregular") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
 /* CABIN */
 @font-face {
@@ -16,232 +17,314 @@ FONTS
   src: url("../fonts/cabin-regular-webfont.eot");
   src: url("../fonts/cabin-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/cabin-regular-webfont.woff") format("woff"), url("../fonts/cabin-regular-webfont.ttf") format("truetype"), url("../fonts/cabin-regular-webfont.svg#cabinregular") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'cabin';
   src: url("../fonts/cabin-bold-webfont.eot");
   src: url("../fonts/cabin-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/cabin-bold-webfont.woff") format("woff"), url("../fonts/cabin-bold-webfont.ttf") format("truetype"), url("../fonts/cabin-bold-webfont.svg#cabinbold") format("svg");
   font-weight: bold;
-  font-style: normal; }
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'cabin';
   src: url("../fonts/cabin-bolditalic-webfont.eot");
   src: url("../fonts/cabin-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/cabin-bolditalic-webfont.woff") format("woff"), url("../fonts/cabin-bolditalic-webfont.ttf") format("truetype"), url("../fonts/cabin-bolditalic-webfont.svg#cabinbold_italic") format("svg");
   font-weight: bold;
-  font-style: italic; }
+  font-style: italic;
+}
 
 @font-face {
   font-family: 'cabin';
   src: url("../fonts/cabin-italic-webfont.eot");
   src: url("../fonts/cabin-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/cabin-italic-webfont.woff") format("woff"), url("../fonts/cabin-italic-webfont.ttf") format("truetype"), url("../fonts/cabin-italic-webfont.svg#cabinitalic") format("svg");
   font-weight: normal;
-  font-style: italic; }
+  font-style: italic;
+}
 
 @font-face {
   font-family: 'cabinmedium';
   src: url("../fonts/cabin-medium-webfont.eot");
   src: url("../fonts/cabin-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/cabin-medium-webfont.woff") format("woff"), url("../fonts/cabin-medium-webfont.ttf") format("truetype"), url("../fonts/cabin-medium-webfont.svg#cabinmedium") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'cabinmedium';
   src: url("../fonts/cabin-mediumitalic-webfont.eot");
   src: url("../fonts/cabin-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/cabin-mediumitalic-webfont.woff") format("woff"), url("../fonts/cabin-mediumitalic-webfont.ttf") format("truetype"), url("../fonts/cabin-mediumitalic-webfont.svg#cabinmedium_italic") format("svg");
   font-weight: normal;
-  font-style: italic; }
+  font-style: italic;
+}
 
 @font-face {
   font-family: 'cabinsemibold';
   src: url("../fonts/cabin-semibold-webfont.eot");
   src: url("../fonts/cabin-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/cabin-semibold-webfont.woff") format("woff"), url("../fonts/cabin-semibold-webfont.ttf") format("truetype"), url("../fonts/cabin-semibold-webfont.svg#cabinsemibold") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'cabinsemibold';
   src: url("../fonts/cabin-semibolditalic-webfont.eot");
   src: url("../fonts/cabin-semibolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/cabin-semibolditalic-webfont.woff") format("woff"), url("../fonts/cabin-semibolditalic-webfont.ttf") format("truetype"), url("../fonts/cabin-semibolditalic-webfont.svg#cabinsemibold_italic") format("svg");
   font-weight: normal;
-  font-style: italic; }
+  font-style: italic;
+}
 
 @font-face {
   font-family: 'franchise';
   src: url("../fonts/Franchise-Bold.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'arrowIcons';
   src: url("../fonts/icomoon.eot");
   src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
+/* line 1, sass/_global.scss */
 body {
   font-size: 14px;
   font-family: cabin;
-  color: #222222; }
+  color: #222222;
+}
 
+/* line 7, sass/_global.scss */
 h1 {
   font-size: 5em;
-  font-family: bebasRegular; }
+  font-family: bebasRegular;
+}
 
+/* line 15, sass/_global.scss */
 h2 {
   font-size: 2em;
-  padding: 5px 0; }
+  padding: 5px 0;
+}
 
 /* ICONS */
+/* line 22, sass/_global.scss */
 .large-icon {
   font-size: 2.5em;
-  padding: 5px; }
+  padding: 5px;
+}
 
+/* line 27, sass/_global.scss */
 .small-icon {
   font-size: 1em;
-  padding: 5px; }
+  padding: 5px;
+}
 
+/* line 32, sass/_global.scss */
 .arrow-icon {
   font-family: arrowIcons;
-  padding: 5px; }
+  padding: 5px;
+}
 
 /* IMAGES */
+/* line 39, sass/_global.scss */
 .circular {
   border-radius: 30px;
   -webkit-border-radius: 30px;
-  -moz-border-radius: 30px; }
+  -moz-border-radius: 30px;
+}
 
 /* TEXT COLORS */
+/* line 47, sass/_global.scss */
 .lighter-blue {
-  color: #c5eaf8; }
+  color: #c5eaf8;
+}
 
+/* line 51, sass/_global.scss */
 .light-gray-text {
-  color: #d2d2d2; }
+  color: #d2d2d2;
+}
 
+/* line 55, sass/_global.scss */
 .white-text {
-  color: #FFF; }
+  color: #FFF;
+}
 
+/* line 1, sass/_masthead.scss */
 .top-nav {
   background-color: #FFF;
   height: 4em;
   border-bottom: 2px solid #b4b4b4;
-  width: 100%; }
+  width: 100%;
+}
 
+/* line 8, sass/_masthead.scss */
 .top-nav-list-button {
   padding: 3px 10px;
   height: 100%;
   border-right: 12px #8ad5f0 solid;
-  background: #33b5e5; }
+  background: #33b5e5;
+}
 
+/* line 15, sass/_masthead.scss */
 .top-nav-page-links {
   list-style: none;
-  margin-right: 70px; }
+  margin-right: 70px;
+}
 
+/* line 20, sass/_masthead.scss */
 .top-nav-page-links li {
   margin-left: 1em;
   padding: 13px 8px 0 8px;
   font-size: 1.1em;
   height: 54px;
-  font-family: bebasRegular; }
+  font-family: bebasRegular;
+}
 
+/* line 28, sass/_masthead.scss */
 .top-nav-page-links li:first-child {
-  margin-left: 0; }
+  margin-left: 0;
+}
 
+/* line 32, sass/_masthead.scss */
 .top-nav-logo {
-  padding: 5px 20px; }
+  padding: 5px 20px;
+}
 
+/* line 36, sass/_masthead.scss */
 .small-top-nav-logo {
   margin: 0 auto;
   display: block;
   width: 145px;
-  padding-top: 5px; }
+  padding-top: 5px;
+}
 
 /* PROFILE */
+/* line 44, sass/_masthead.scss */
 .top-nav-profile-container {
   font-size: 1.2em;
   background: #33b5e5;
   border-left: 12px solid #8ad5f0;
-  height: 54px; }
+  height: 54px;
+}
 
+/* line 51, sass/_masthead.scss */
 .profile-nav-user-name {
   color: #c5eaf8;
-  padding: 18px 15px 0 0; }
+  padding: 18px 15px 0 0;
+}
 
+/* line 56, sass/_masthead.scss */
 .top-nav-profile-avatar {
   padding: 4px 10px 0;
-  float: right; }
+  float: right;
+}
 
+/* line 61, sass/_masthead.scss */
 .nav-pages {
   border-left: 8px solid;
   color: #757575;
   -webkit-transition: background-color 0.2s ease;
   -webkit-transition: border-color 0.3s linear;
+  transition: border-color 0.3s linear;
   background: #FFF;
-  border-color: #FFF; }
+  border-color: #FFF;
+}
 
+/* line 71, sass/_masthead.scss */
 .nav-pages:hover {
-  color: #262626; }
+  color: #262626;
+}
 
+/* line 75, sass/_masthead.scss */
 .nav-courses:hover {
   border-color: #33b5e5;
   color: #262626;
-  background: #8ad5f0; }
+  background: #8ad5f0;
+}
 
+/* line 81, sass/_masthead.scss */
 .nav-community:hover {
   border-color: #aa66cc;
   color: #262626;
-  background: #d6adeb; }
+  background: #d6adeb;
+}
 
+/* line 87, sass/_masthead.scss */
 .nav-earn-points:hover {
   border-color: #99cc00;
   color: #262626;
-  background: #c5e26d; }
+  background: #c5e26d;
+}
 
+/* line 93, sass/_masthead.scss */
 .nav-spend-points:hover {
   border-color: #ffbb33;
   color: #262626;
-  background: #ffd980; }
+  background: #ffd980;
+}
 
+/* line 99, sass/_masthead.scss */
 .nav-blog:hover {
   border-color: #ff4444;
   color: #262626;
-  background: #ff9494; }
+  background: #ff9494;
+}
 
+/* line 105, sass/_masthead.scss */
 .profile-avatar {
   -webkit-transition: border-color 0.2s ease;
   border: 3px solid;
-  border-color: #8ad5f0; }
+  border-color: #8ad5f0;
+}
 
+/* line 111, sass/_masthead.scss */
 .profile-avatar:hover {
   border: 3px solid;
-  border-color: #c5eaf8; }
+  border-color: #c5eaf8;
+}
 
+/* line 1, sass/_home.scss */
 .home-above-fold-container {
   width: 100%;
   height: 600px;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
+/* line 8, sass/_home.scss */
 .svg-container {
   width: 4000px;
   position: absolute;
   left: 50%;
   margin-left: -2000px;
-  top: 0; }
+  top: 0;
+}
 
+/* line 16, sass/_home.scss */
 .svg-container object {
-  width: 100%; }
+  width: 100%;
+}
 
+/* line 20, sass/_home.scss */
 .home-above-fold-header-image {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+}
 
+/* line 24, sass/_home.scss */
 .home-above-fold-intro {
-  margin-top: 16px; }
+  margin-top: 16px;
+}
 
+/* line 28, sass/_home.scss */
 .home-logo {
-  margin-top: 1em; }
+  margin-top: 1em;
+}
 
+/* line 35, sass/_home.scss */
 .video-button {
   background: #ffbb33;
   text-align: center;
@@ -256,21 +339,29 @@ h2 {
   margin-top: 0.778em;
   word-break: keep-all;
   float: left;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
+/* line 52, sass/_home.scss */
 .video-button:hover {
-  background: #ffd980; }
+  background: #ffd980;
+}
 
+/* line 56, sass/_home.scss */
 .home-email-signup {
-  margin-top: 9em; }
+  margin-top: 9em;
+}
 
+/* line 60, sass/_home.scss */
 .home-email-signup-input input {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
   margin-top: 0.75em;
-  border: solid 1px #b4b4b4; }
+  border: solid 1px #b4b4b4;
+}
 
+/* line 71, sass/_home.scss */
 .home-email-signup-submit input {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -279,77 +370,167 @@ h2 {
   background: #aa66cc;
   border: none;
   color: #FFF;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+}
 
+/* line 82, sass/_home.scss */
 .home-email-signup-submit input:hover {
-  background: #d6adeb; }
+  background: #d6adeb;
+}
 
+/* line 86, sass/_home.scss */
 .small-watch-button {
-  display: block; }
+  display: block;
+}
 
+/* line 90, sass/_home.scss */
 .small-video-button-container {
-  display: none; }
+  display: none;
+}
 
+/* line 94, sass/_home.scss */
 .home-middle-logo {
   display: none;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
+
+/* line 99, sass/_home.scss */
+.sign-up-bonus {
+  margin-top: -1.5em;
+}
+
+/* line 104, sass/_home.scss */
+.bonus-text {
+  float: left;
+  width: 14em;
+  background: #99cc00;
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  color: #FFF;
+  font-size: 1.3em;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+/* line 119, sass/_home.scss */
+.bonus-points {
+  margin-top: -2.5em;
+  margin-left: -4em;
+  float: left;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 75px;
+  -moz-border-radius: 75px;
+  border-radius: 75px;
+  background: #99cc00;
+  color: #FFF;
+}
+
+/* line 133, sass/_home.scss */
+.bonus-number {
+  font-size: 3em;
+  line-height: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  font-weight: bold;
+}
 
 /* ******************* */
 /* *** MEDIA QUERIES * */
 /* ******************* */
 @media screen and (max-width: 800px) {
+  /* line 147, sass/_home.scss */
   .home-above-fold-container {
-    height: 400px; }
+    height: 400px;
+  }
 
+  /* line 151, sass/_home.scss */
   .svg-container {
     width: 3000px;
     height: 400px;
-    margin-left: -1500px; }
+    margin-left: -1500px;
+  }
 
+  /* line 157, sass/_home.scss */
   .video-button {
     padding: 8px 10px;
     font-size: 1em;
-    margin-top: 1em; }
+    margin-top: 1em;
+  }
 
+  /* line 163, sass/_home.scss */
   .home-email-signup {
-    margin-top: 4em; }
+    margin-top: 4em;
+  }
 
+  /* line 167, sass/_home.scss */
   .home-email-signup-input input {
-    margin-top: 0; }
+    margin-top: 0;
+  }
 
+  /* line 171, sass/_home.scss */
   .home-email-signup-submit input {
     padding: 10px;
-    font-size: 1em; } }
+    font-size: 1em;
+  }
+}
 /* SMALL */
 @media screen and (max-width: 640px) {
+  /* line 181, sass/_home.scss */
   .home-email-signup {
-    margin-top: 3em; } }
+    margin-top: 3em;
+  }
+}
 @media screen and (max-width: 545px) {
+  /* line 189, sass/_home.scss */
   .video-button-container {
-    display: none; }
+    display: none;
+  }
 
+  /* line 193, sass/_home.scss */
   .small-video-button-container {
-    display: block; }
+    display: block;
+  }
 
+  /* line 197, sass/_home.scss */
   .home-logo {
-    display: none; }
+    display: none;
+  }
 
+  /* line 201, sass/_home.scss */
   .home-email-signup {
-    margin-top: 8em; }
+    margin-top: 8em;
+  }
 
+  /* line 205, sass/_home.scss */
   .home-middle-logo {
-    display: block; } }
+    display: block;
+  }
+}
 @media screen and (max-width: 400px) {
+  /* line 213, sass/_home.scss */
   .home-above-fold-container {
-    height: 300px; }
+    height: 300px;
+  }
 
+  /* line 217, sass/_home.scss */
   .svg-container {
     width: 2000px;
     height: 300px;
-    margin-left: -1000px; }
+    margin-left: -1000px;
+  }
 
+  /* line 223, sass/_home.scss */
   .home-email-signup {
-    margin-top: 4em; }
+    margin-top: 4em;
+  }
 
+  /* line 227, sass/_home.scss */
   .small-watch-button {
-    display: block; } }
+    display: block;
+  }
+}

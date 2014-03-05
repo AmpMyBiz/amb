@@ -9,7 +9,7 @@
 	<div class="row">
 
 		<div class="home-logo large-2 medium-2 small-2 left columns">
-			<img src="http://fillmurray.com/200/75">
+			<img src="<?php echo base_url('assets/images'); ?>/logo-200x75.png">
 		</div>
 
 		<div class="video-button-container right large-2 medium-2 small-2 columns">
@@ -24,7 +24,7 @@
 
 		<div class="small-centered small-4 columns">
 
-			<img src="http://fillmurray.com/300/75">
+			<img src="<?php echo base_url('assets/images'); ?>/logo-200x75.png">
 
 		</div>
 
@@ -55,8 +55,19 @@
 
 </div>
 
-<div class="small-video-button-container right large-2 medium-2 small-2colummns">
+<div class="small-video-button-container right large-2 medium-2 small-2 columns">
 
 	<span class="video-button">Watch Video</span>
 
 </div> <!-- end .video-button -->
+
+<div class="row">
+
+	<div class="large-4 medium-6 right columns sign-up-bonus">
+
+		<div class="bonus-text">Sign up in BETA and get</div><!-- end .bonus-text -->
+		<div class="bonus-points"><p class="bonus-number">500</p><p>points!<p></div><!-- end .bonus-points -->
+
+	</div><!-- end .sign-up-bonus -->
+
+</div>

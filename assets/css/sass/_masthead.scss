@@ -63,6 +63,7 @@
 	color: $gray;
 	-webkit-transition: background-color 0.2s ease;
 	-webkit-transition: border-color 0.3s linear;
+	transition: border-color 0.3s linear; 
 	background: #FFF;
 	border-color: #FFF;
 }

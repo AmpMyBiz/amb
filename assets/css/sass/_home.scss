@@ -93,7 +93,49 @@
 
 .home-middle-logo {
   display: none;
-  margin: 0 auto;
+  margin: 0 auto; 
+}
+
+.sign-up-bonus {
+    margin-top: -1.5em;
+    // margin-right: -6em;
+  }
+
+.bonus-text {
+  float: left;
+  width: 14em;
+  background: $green;
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  color: #FFF;
+  font-size: 1.3em;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px; 
+}
+
+.bonus-points {
+  margin-top: -2.5em;
+  margin-left: -4em;
+  float: left;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 75px;
+  -moz-border-radius: 75px;
+  border-radius: 75px;
+  background: $green; 
+  color: #FFF;
+}
+
+.bonus-number {
+  font-size: 3em;
+  line-height: 1em;
+  margin-top:0.5em;
+  margin-bottom: 0;
+  font-weight: bold;
 }
 
 /* ******************* */
