@@ -3,141 +3,6 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="4000px"
 	 height="600px" viewBox="0 0 4000 600" enable-background="new 0 0 4000 600" xml:space="preserve">
-	 
-	 <style type="text/css">
-
-	 	#scientist1Head {
-	 		-webkit-transform-origin: center center;
-	 		        transform-origin: center center;
-	 		-webkit-animation: moveScientist1Head 13s infinite linear 10s;
-	 		        animation: moveScientist1Head 13s infinite linear 10s;
-	 	}
-
-	 	#scientist4 {
-		 	-webkit-transform-origin: center center;
-		 	        transform-origin: center center;
-		 	-webkit-animation: scientist4Turns 13s infinite linear 10s;
-		 	        animation: scientist4Turns 13s infinite linear 10s;
-	 	}
-
-	 	#scientist4Container {
-		 	-webkit-transform-origin: center center;
-		 	        transform-origin: center center;
-		 	-webkit-animation: scientist4Move 13s infinite linear 10s;
-		 	        animation: scientist4Move 13s infinite linear 10s;
-	 	}
-
-	 	/* ************** */
-	 	/* * ANIMATIONS * */
-	 	/* ************** */
-
-	 	@-webkit-keyframes rotateFilm {
-	 		0% { -webkit-transform: rotate( 0deg ); transform: rotate( 0deg ); }
-	 		100% { -webkit-transform: rotate( 180deg ); transform: rotate( 180deg ); }
-	 	}
-
-	 	@keyframes rotateFilm {
-	 		0% { -webkit-transform: rotate( 0deg ); transform: rotate( 0deg ); }
-	 		100% { -webkit-transform: rotate( 180deg ); transform: rotate( 180deg ); }
-	 	}
-
-	 	@-webkit-keyframes blinkLights {
-	 		0% { opacity: 0; }
-	 		1% { opacity: 1; }
-	 		19% { opacity: 1; }
-	 		20% { opacity: 0; }
-	 		100% { opacity: 0; }
-	 	}
-
-	 	@keyframes blinkLights {
-	 		0% { opacity: 0; }
-	 		1% { opacity: 1; }
-	 		19% { opacity: 1; }
-	 		20% { opacity: 0; }
-	 		100% { opacity: 0; }
-	 	}
-
-	 	@-webkit-keyframes moveScientist1Head {
-	 		0% { -webkit-transform: translateY( 0px ); transform: translateY( 0px ); }
-	 		2% { -webkit-transform: translateY( 5px ); transform: translateY( 5px ); }
-	 		4% { -webkit-transform: translateY( 0px ); transform: translateY( 0px ); }
-	 		6% { -webkit-transform: translateY( 5px ); transform: translateY( 5px ); }
-	 		8% { -webkit-transform: translateY( 0px ); transform: translateY( 0px ); }
-	 		10% { -webkit-transform: translateY( 5px ); transform: translateY( 5px ); }
-	 		12% { -webkit-transform: translateY( 0px ); transform: translateY( 0px ); }
-	 		14% { -webkit-transform: translateY( 5px ); transform: translateY( 5px ); }
-	 		16% { -webkit-transform: translateY( 0px ); transform: translateY( 0px ); }
-	 		18% { -webkit-transform: translateY( 5px ); transform: translateY( 5px ); }
-	 		20% { -webkit-transform: translateY( 0px ); transform: translateY( 0px ); }
-	 		22% { -webkit-transform: translateY( 5px ); transform: translateY( 5px ); }
-	 		24% { -webkit-transform: translateY( 0px ); transform: translateY( 0px ); }
-	 		26% { -webkit-transform: translateY( 5px ); transform: translateY( 5px ); }
-	 		28% { -webkit-transform: translateY( 0px ); transform: translateY( 0px ); }
-	 		30% { -webkit-transform: translateY( 5px ); transform: translateY( 5px ); }
-	 		32% { -webkit-transform: translateY( 0px ); transform: translateY( 0px ); }
-	 		100% {  }
-	 	}
-
-	 	@keyframes moveScientist1Head {
-	 		0% { -webkit-transform: translateY( 0px ); transform: translateY( 0px ); }
-	 		2% { -webkit-transform: translateY( 5px ); transform: translateY( 5px ); }
-	 		4% { -webkit-transform: translateY( 0px ); transform: translateY( 0px ); }
-	 		6% { -webkit-transform: translateY( 5px ); transform: translateY( 5px ); }
-	 		8% { -webkit-transform: translateY( 0px ); transform: translateY( 0px ); }
-	 		10% { -webkit-transform: translateY( 5px ); transform: translateY( 5px ); }
-	 		12% { -webkit-transform: translateY( 0px ); transform: translateY( 0px ); }
-	 		14% { -webkit-transform: translateY( 5px ); transform: translateY( 5px ); }
-	 		16% { -webkit-transform: translateY( 0px ); transform: translateY( 0px ); }
-	 		18% { -webkit-transform: translateY( 5px ); transform: translateY( 5px ); }
-	 		20% { -webkit-transform: translateY( 0px ); transform: translateY( 0px ); }
-	 		22% { -webkit-transform: translateY( 5px ); transform: translateY( 5px ); }
-	 		24% { -webkit-transform: translateY( 0px ); transform: translateY( 0px ); }
-	 		26% { -webkit-transform: translateY( 5px ); transform: translateY( 5px ); }
-	 		28% { -webkit-transform: translateY( 0px ); transform: translateY( 0px ); }
-	 		30% { -webkit-transform: translateY( 5px ); transform: translateY( 5px ); }
-	 		32% { -webkit-transform: translateY( 0px ); transform: translateY( 0px ); }
-	 		100% {  }
-	 	}
-
-	 	@-webkit-keyframes scientist4Turns {
-	 		0% { -webkit-transform: scaleX( 1 ); transform: scaleX( 1 ); }
-	 		50% { -webkit-transform: scaleX( 1 ); transform: scaleX( 1 ); }
-	 		51% { -webkit-transform: scaleX( -1 ); transform: scaleX( -1 ); }
-	 		70% { -webkit-transform: scaleX( -1 ); transform: scaleX( -1 ); }
-	 		71% { -webkit-transform: scaleX( 1 ); transform: scaleX( 1 ); }
-	 		100% { -webkit-transform: scaleX( 1 ); transform: scaleX( 1 ); }
-	 	}
-
-	 	@keyframes scientist4Turns {
-	 		0% { -webkit-transform: scaleX( 1 ); transform: scaleX( 1 ); }
-	 		50% { -webkit-transform: scaleX( 1 ); transform: scaleX( 1 ); }
-	 		51% { -webkit-transform: scaleX( -1 ); transform: scaleX( -1 ); }
-	 		70% { -webkit-transform: scaleX( -1 ); transform: scaleX( -1 ); }
-	 		71% { -webkit-transform: scaleX( 1 ); transform: scaleX( 1 ); }
-	 		100% { -webkit-transform: scaleX( 1 ); transform: scaleX( 1 ); }
-	 	}
-
-	 	@-webkit-keyframes scientist4Move {
-	 		0% { -webkit-transform: translateX( 0px ) translateY( 0px ); transform: translateX( 0px ) translateY( 0px ); }
-	 		30% { -webkit-transform: translateX( 0px ) translateY( 0px ); transform: translateX( 0px ) translateY( 0px ); }
-	 		50% { -webkit-transform: translateX( 33px ) translateY( 150px ); transform: translateX( 33px ) translateY( 150px ); }
-	 		60% { -webkit-transform: translateX( 125px ) translateY( 150px ); transform: translateX( 125px ) translateY( 150px ); }
-	 		70% { -webkit-transform: translateX( 125px ) translateY( 150px ); transform: translateX( 125px ) translateY( 150px ); }
-	 		80% { -webkit-transform: translateX( 33px ) translateY( 150px ); transform: translateX( 33px ) translateY( 150px ); }
-	 		100% { -webkit-transform: translateX( 0px ) translateY( 0px ); transform: translateX( 0px ) translateY( 0px ); }
-	 	}
-
-	 	@keyframes scientist4Move {
-	 		0% { -webkit-transform: translateX( 0px ) translateY( 0px ); transform: translateX( 0px ) translateY( 0px ); }
-	 		30% { -webkit-transform: translateX( 0px ) translateY( 0px ); transform: translateX( 0px ) translateY( 0px ); }
-	 		50% { -webkit-transform: translateX( 33px ) translateY( 150px ); transform: translateX( 33px ) translateY( 150px ); }
-	 		60% { -webkit-transform: translateX( 125px ) translateY( 150px ); transform: translateX( 125px ) translateY( 150px ); }
-	 		70% { -webkit-transform: translateX( 125px ) translateY( 150px ); transform: translateX( 125px ) translateY( 150px ); }
-	 		80% { -webkit-transform: translateX( 33px ) translateY( 150px ); transform: translateX( 33px ) translateY( 150px ); }
-	 		100% { -webkit-transform: translateX( 0px ) translateY( 0px ); transform: translateX( 0px ) translateY( 0px ); }
-	 	}
-
-	 </style>
 
 <g id="BG">
 	<g id="tiles-and-tubes">
@@ -783,22 +648,164 @@
 </g>
 <g id="scientists">
 
-	<g id="scientist1">
-		<circle fill="#FFDEA4" cx="1.003" cy="-29.933" r="14.107"/>
-		<rect x="-13.104" y="-11.062" fill="#F9F9FA" width="28.213" height="42.023"/>
-		<circle fill="#FFFFFF" stroke="#757576" stroke-width="2" stroke-miterlimit="10" cx="-5.666" cy="-32.539" r="4.945"/>
-		<circle fill="#FFFFFF" stroke="#757576" stroke-width="2" stroke-miterlimit="10" cx="7.566" cy="-32.539" r="4.944"/>
-		<polyline fill="none" stroke="#757576" stroke-width="2" stroke-miterlimit="10" points="-4.666,-11.062 0.279,-1.173 
-			0.279,30.961 		"/>
-		<line fill="none" stroke="#757576" stroke-width="2" stroke-miterlimit="10" x1="0.279" y1="-1.173" x2="6.564" y2="-11.062"/>
+	<g transform="translate(1860, 450)">
+
+		<g id="scientist1">
+
+			<g>
+
+			<animateMotion
+
+				id="scientist1Head1"
+				values="0,0;0,5;0,0;0,5;0,0;0,5;0,0"
+				dur="1s"
+				begin="4s;scientist1Head2.end"
+
+				/>
+
+			<animateMotion
+
+				id="scientist1Head2"
+				from="0,0"
+				to="0,0"
+				dur="17s"
+				begin="scientist1Head1.end"
+
+				/>
+
+				<circle fill="#FFDEA4" cx="1.003" cy="-29.933" r="14.107"/>
+				<circle fill="#FFFFFF" stroke="#757576" stroke-width="2" stroke-miterlimit="10" cx="-5.666" cy="-32.539" r="4.945"/>
+				<circle fill="#FFFFFF" stroke="#757576" stroke-width="2" stroke-miterlimit="10" cx="7.566" cy="-32.539" r="4.944"/>
+
+			</g>
+
+			<rect x="-13.104" y="-11.062" fill="#F9F9FA" width="28.213" height="42.023"/>
+			<polyline fill="none" stroke="#757576" stroke-width="2" stroke-miterlimit="10" points="-4.666,-11.062 0.279,-1.173 
+				0.279,30.961 		"/>
+			<line fill="none" stroke="#757576" stroke-width="2" stroke-miterlimit="10" x1="0.279" y1="-1.173" x2="6.564" y2="-11.062"/>
+		</g>
+
 	</g>
 
-	<g id="scientist4Container">
+	<g transform="translate(2040, 350)">
+
 		<g id="scientist4">
-			<circle fill="#FFDEA4" cx="2043.086" cy="336.62" r="14.107"/>
-			<rect x="2033.313" y="355.49" fill="#F9F9FA" width="19.334" height="42.023"/>
-			<circle fill="#FFFFFF" stroke="#757576" stroke-width="2" stroke-miterlimit="10" cx="2035.418" cy="334.014" r="4.944"/>
+
+			<animateTransform
+
+				id="scientist4Flip1"
+				attributeName="transform"
+				attributeType="XML"
+				type="scale"
+				from="1 1"
+				to="-1 1"
+				dur="0.5s" 
+				begin="12s;scientist4Flip4.end"
+
+				/>
+
+			<animateTransform
+
+				id="scientist4Flip2"
+				attributeName="transform"
+				attributeType="XML"
+				type="scale"
+				from="-1 1"
+				to="-1 1"
+				dur="0.5s" 
+				begin="scientist4Flip1.end"
+
+				/>
+
+			<animateTransform
+
+				id="scientist4Flip3"
+				attributeName="transform"
+				attributeType="XML"
+				type="scale"
+				from="-1 1"
+				to="1 1"
+				dur="0.5s" 
+				begin="scientist4Flip2.end"
+
+				/>
+
+			<animateTransform
+
+				id="scientist4Flip4"
+				attributeName="transform"
+				attributeType="XML"
+				type="scale"
+				from="1 1"
+				to="1 1"
+				dur="16.5s" 
+				begin="scientist4Flip3.end"
+
+				/>
+
+			<circle fill="#FFDEA4" cx="1.003" cy="-29.498" r="14.107"/>
+			<rect x="-8.77" y="-10.627" fill="#F9F9FA" width="19.334" height="42.023"/>
+			<circle fill="#FFFFFF" stroke="#757576" stroke-width="2" stroke-miterlimit="10" cx="-6.666" cy="-32.104" r="4.944"/>
+
 		</g>
+
+		<animateMotion
+
+			id="scientist4Move1"
+			values="0,0;30,150"
+			dur="1.5s"
+			begin="5s;scientist4Move6.end"
+
+			/>
+
+		<animateMotion
+
+			id="scientist4Move2"
+			values="30,150;-30,150"
+			dur="1s"
+			begin="scientist4Move1.end"
+
+			/>
+
+		<animateMotion
+
+			id="scientist4Move3"
+			from="-30,150"
+			to="-30,150"
+			dur="5s"
+			begin="scientist4Move2.end"
+
+			/>
+
+		<animateMotion
+
+			id="scientist4Move4"
+			values="-30,150;30,150"
+			dur="1s"
+			begin="scientist4Move3.end"
+
+			/>
+
+		<animateMotion
+
+			id="scientist4Move5"
+			values="30,150;0,0"
+			dur="1.5s"
+			begin="scientist4Move4.end"
+
+			/>
+
+		<animateMotion
+
+			id="scientist4Move6"
+			from="0,0"
+			to="0,0"
+			dur="8s"
+			begin="scientist4Move5.end"
+
+			/>
+
+
 	</g>
 
 	<g transform="translate(1800, 450)">
@@ -814,7 +821,7 @@
 				from="1 1"
 				to="-1 1"
 				dur="0.5s" 
-				begin="0s;scientist3Flip3.end"
+				begin="0s;scientist3Flip4.end"
 				fill="freeze"
 
 				/>
@@ -827,7 +834,7 @@
 				type="scale"
 				from="-1 1"
 				to="-1 1"
-				dur="9.5s"
+				dur="9s"
 				begin="scientist3Flip1.end"
 
 				/>
@@ -845,6 +852,19 @@
 
 				/>
 
+			<animateTransform
+
+				id="scientist3Flip4"
+				attributeName="transform"
+				attributeType="XML"
+				type="scale"
+				from="1 1"
+				to="1 1"
+				dur="9s"
+				begin="scientist3Flip3.end"
+
+				/>
+
 			<circle fill="#A0865D" cx="0.279" cy="-29.511" r="14.107"/>
 			<rect x="-9.494" y="-10.641" fill="#F9F9FA" width="19.333" height="42.023"/>
 			<circle fill="#FFFFFF" stroke="#757576" stroke-width="2" stroke-miterlimit="10" cx="-7.39" cy="-32.118" r="4.945"/>				
@@ -856,7 +876,7 @@
 			id="scientist3Move1"
 			values="0,0;75,100;300,100;350,0"
 			dur="3s"
-			begin="0.5s;scientist3Move3.end"
+			begin="0.5s;scientist3Move4.end"
 
 			/>
 
@@ -876,6 +896,16 @@
 			values="350,0;300,100;75,100;0,0"
 			dur="3s"
 			begin="scientist3Move2.end"
+
+			/>
+
+		<animateMotion
+
+			id="scientist3Move4"
+			from="0"
+			to="0"
+			dur="6.5s"
+			begin="scientist3Move3.end"
 
 			/>
 
