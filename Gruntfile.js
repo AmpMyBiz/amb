@@ -17,7 +17,7 @@ module.exports = function(grunt) {
       }
     },
 
-    compass: {
+    sass: {
       dev: {
         options: {
           sassDir: ['assets/css/sass'],
@@ -25,6 +25,7 @@ module.exports = function(grunt) {
           environment: 'development'
         }
       },
+      
       prod: {
         options: {
           sassDir: ['assets/css/sass'],
@@ -46,6 +47,8 @@ module.exports = function(grunt) {
     }
 
   });
+
+  grunt.loadNpmTasks('grunt-contrib-compass');
 
   grunt.registerTask('default', ['watch', 'compass:dev',  'autoprefixer']);
 
